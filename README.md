@@ -286,13 +286,12 @@ Syntax
 
 itmcam-cfg.sh { -h WAS home } \[ -p \]\
 { -a \[config {-v} { -m \[yn\|yndiag\|diag\] } { -e \[prod\|stage\] }\
-unconfig {-v}\
-migrate {-f} {-t} \] }\
+       unconfig {-v}\
+       migrate {-f} {-t} \] }\
 \[-s servern1,servern2,\...}\
 \[ -x \] \[ -d \]
 
-*\
--h* WebSphere home directory
+*-h* WebSphere home directory
 
 *-p* SOAP port used to connect to Dmgr (**optional**). Only relevant in
 case of \"-a config\"\
