@@ -58,9 +58,8 @@ easier to integrate configuration related work into existing automation
 procedures.
 
 Response files are created based on the descriptions found the IBM
-Knowledge Center for *[[Tivoli Composite Application Manager for
-Applications
-7.2.0]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0)
+Knowledge Center for *[Tivoli Composite Application Manager for
+Applications 7.2.0](https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0)
 and IBM Cloud Application Performance Management, Private 8.1.4*.
 
 **Configuring the data collector in silent mode**
