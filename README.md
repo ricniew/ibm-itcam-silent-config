@@ -63,18 +63,19 @@ Applications
 7.2.0]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0)
 and IBM Cloud Application Performance Management, Private 8.1.4*.
 
-**Configuring the data collector in silent mode **
+**Configuring the data collector in silent mode**
 
 [Version 7.2]
 
 [[https://www.ibm.com/support/knowledgecenter/en/SSHLNR\_8.1.4/com.ibm.pm.doc/install/was\_config\_dcsilent\_properties\_file.htm\#was\_config\_dcsilent\_properties\_file]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_config_dcsilent_properties_file.htm#was_config_dcsilent_properties_file)
 
-[Version 7.3:]{.underline}
+[Version 7.3]
 
 [[https://www.ibm.com/support/knowledgecenter/en/SS3JRN\_7.2.0/com.ibm.itcamfapps\_ad.doc\_72/ecam\_guide\_72\_new/silent\_config\_was\_dc.html]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_config_was_dc.html)
 
-**Migrating the data collector in silent mode.\
-**[Version 7.2]{.underline}
+**Migrating the data collector in silent mode**
+
+[Version 7.2]
 
 [[https://www.ibm.com/support/knowledgecenter/en/SS3JRN\_7.2.0/com.ibm.itcamfapps\_ad.doc\_72/ecam\_guide\_72\_new/silent\_migrate\_was\_dc.html]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_migrate_was_dc.html)
 
