@@ -63,8 +63,9 @@ Applications
 7.2.0]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0)
 and IBM Cloud Application Performance Management, Private 8.1.4*.
 
-**Configuring the data collector in silent mode.\
-**[Version 7.2]{.underline}
+**Configuring the data collector in silent mode **
+
+[Version 7.2]
 
 [[https://www.ibm.com/support/knowledgecenter/en/SSHLNR\_8.1.4/com.ibm.pm.doc/install/was\_config\_dcsilent\_properties\_file.htm\#was\_config\_dcsilent\_properties\_file]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_config_dcsilent_properties_file.htm#was_config_dcsilent_properties_file)
 
