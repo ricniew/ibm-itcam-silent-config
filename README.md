@@ -234,14 +234,12 @@ Always check the created response file if it meets your required set up.
     > if [ \$? -ne 0 ] ; then\
     > echo " ERROR During post processing"\
     > return 1\
-    > fi\
-   
+    > fi   
     
-    The sample python script *jvm\_arguments.py* is included in this
-    package.
+    The sample python script *jvm\_arguments.py* is included in this package.
 <br/> 
 
-5.  ***OPTIONAL: Modify CreateServerAliases ***
+5.  ***OPTIONAL: Modify CreateServerAliases***
    
     This function creates server aliases based on input values made. You
     should modify it when you are using aliases for your server names.
