@@ -141,13 +141,13 @@ Always check the created response file if it meets your required set up.
 
        -   Integration of the DC with the ITCAM for Transactions
 
-           -   Integration of the DC with the ITCAM for SOA
+       -   Integration of the DC with the ITCAM for SOA
 
-   -   Integration of the DC with the Tivoli Performance Monitoring\"
+       -   Integration of the DC with the Tivoli Performance Monitoring\"
 
-   -   Integration of the DC with the ITCAM Diagnostics Tool\"
+       -   Integration of the DC with the ITCAM Diagnostics Tool\"
 
-   -   Integration of the data collector with ITCAM Agent for WebSphere version 6 (for Version 7.3 only)
+       -   Integration of the data collector with ITCAM Agent for WebSphere version 6 (for Version 7.3 only)
 
 If you would like to use any of that options the procedure must be
 modified and the function *CreateConfigRespFile* needs to be adjusted
