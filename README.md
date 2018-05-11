@@ -137,12 +137,11 @@ instance. For the authentication client SOAP properties are used.
 **Please check below for possible changes you may need to perform.**
 Always check the created response file if it meets your required set up.
 
-1.  In case you configure a new DC the following configuration options
-    are not enabled by default:
+1.  In case you configure a new DC the following configuration options are not enabled by default:
 
-   -   Integration of the DC with the ITCAM for Transactions
+       -   Integration of the DC with the ITCAM for Transactions
 
-   -   Integration of the DC with the ITCAM for SOA
+           -   Integration of the DC with the ITCAM for SOA
 
    -   Integration of the DC with the Tivoli Performance Monitoring\"
 
