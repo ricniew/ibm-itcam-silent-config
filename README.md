@@ -66,31 +66,31 @@ and IBM Cloud Application Performance Management, Private 8.1.4*.
 
 [Version 7.2]
 
-[[https://www.ibm.com/support/knowledgecenter/en/SSHLNR\_8.1.4/com.ibm.pm.doc/install/was\_config\_dcsilent\_properties\_file.htm\#was\_config\_dcsilent\_properties\_file]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_config_dcsilent_properties_file.htm#was_config_dcsilent_properties_file)
+[https://www.ibm.com/support/knowledgecenter/en/SSHLNR\_8.1.4/com.ibm.pm.doc/install/was\_config\_dcsilent\_properties\_file.htm\#was\_config\_dcsilent\_properties\_file](https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_config_dcsilent_properties_file.htm#was_config_dcsilent_properties_file)
 
 [Version 7.3]
 
-[[https://www.ibm.com/support/knowledgecenter/en/SS3JRN\_7.2.0/com.ibm.itcamfapps\_ad.doc\_72/ecam\_guide\_72\_new/silent\_config\_was\_dc.html]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_config_was_dc.html)
+[https://www.ibm.com/support/knowledgecenter/en/SS3JRN\_7.2.0/com.ibm.itcamfapps\_ad.doc\_72/ecam\_guide\_72\_new/silent\_config\_was\_dc.html](https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_config_was_dc.html)
 
 **Migrating the data collector in silent mode**
 
 [Version 7.2]
 
-[[https://www.ibm.com/support/knowledgecenter/en/SS3JRN\_7.2.0/com.ibm.itcamfapps\_ad.doc\_72/ecam\_guide\_72\_new/silent\_migrate\_was\_dc.html]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_migrate_was_dc.html)
+[https://www.ibm.com/support/knowledgecenter/en/SS3JRN\_7.2.0/com.ibm.itcamfapps\_ad.doc\_72/ecam\_guide\_72\_new/silent\_migrate\_was\_dc.html](https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_migrate_was_dc.html)
 
 [Version 7.3:]
 
-[[https://www.ibm.com/support/knowledgecenter/en/SSHLNR\_8.1.4/com.ibm.pm.doc/install/was\_migrate\_dcsilent.htm]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_migrate_dcsilent.htm)
+[https://www.ibm.com/support/knowledgecenter/en/SSHLNR\_8.1.4/com.ibm.pm.doc/install/was\_migrate\_dcsilent.htm](https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_migrate_dcsilent.htm)
 
 **Unconfiguring the data collector in silent mode**
 
 [Version 7.2]
 
-[[https://www.ibm.com/support/knowledgecenter/en/SS3JRN\_7.2.0/com.ibm.itcamfapps\_ad.doc\_72/ecam\_guide\_72\_new/silent\_unconfig\_was\_dc.html]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_unconfig_was_dc.html)
+[https://www.ibm.com/support/knowledgecenter/en/SS3JRN\_7.2.0/com.ibm.itcamfapps\_ad.doc\_72/ecam\_guide\_72\_new/silent\_unconfig\_was\_dc.html](https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_unconfig_was_dc.html)
 
 [Version 7.3:]
 
-[[https://www.ibm.com/support/knowledgecenter/en/SSHLNR\_8.1.4/com.ibm.pm.doc/install/was\_unconfigure\_dcsilent.htm]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_unconfigure_dcsilent.htm)
+[https://www.ibm.com/support/knowledgecenter/en/SSHLNR\_8.1.4/com.ibm.pm.doc/install/was\_unconfigure\_dcsilent.htm](https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_unconfigure_dcsilent.htm)
 
 Installation
 ============
@@ -134,9 +134,8 @@ Preparation
 The created response files contains configuration options which are
 valid for the most popular set up with a DC monitoring a WebSphere
 instance. For the authentication client SOAP properties are used.
-[Please check below for possible changes you may need to
-perform]{.underline}. Always check the created response file if it meets
-your required set up.
+**Please check below for possible changes you may need to perform.**
+Always check the created response file if it meets your required set up.
 
 1.  In case you configure a new DC the following configuration options
     are not enabled by default:
@@ -152,10 +151,10 @@ your required set up.
 -   Integration of the data collector with ITCAM Agent for WebSphere
     version 6 (for Version 7.3 only)
 
-> If you would like to use any of that options the procedure must be
-> modified and the function *CreateConfigRespFile* needs to be adjusted
-> with the required options to be used (modify *False* to *True*)
->
+If you would like to use any of that options the procedure must be
+modified and the function *CreateConfigRespFile* needs to be adjusted
+with the required options to be used (modify *False* to *True*)
+
 > \# Integration of the DC with the ITCAM for Transactions\"\
 > ttapi.enable=False\
 > ttapi.host=yourhost\
