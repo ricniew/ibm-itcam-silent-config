@@ -136,7 +136,7 @@ valid for the most popular set up with a DC monitoring a WebSphere
 instance. For the authentication client SOAP properties are used.
 **Please check below for possible changes you may need to perform.**
 Always check the created response file if it meets your required set up.
- <br/>  
+ 
  <br/>  
 1.  **In case you configure a new DC the following configuration options are not enabled by default:**
 
@@ -173,7 +173,7 @@ Always check the created response file if it meets your required set up.
        > tema.host.v6=\
        > tema.port.v6=63336
   
-  
+ <br/> 
 2.  **For configuration actions (configure, unconfigure and migration):**
 
        -   No *Backup of the WebSphere configuration* is performed by default.
@@ -193,6 +193,7 @@ Always check the created response file if it meets your required set up.
     user/password instead (***was.wsadmin.username***,
     ***was.wsadmin.password***)
 
+<br/>
 3.  **Only if using ITCAM for Diagnostic Managing Server* (ms.connect=True)**
 
        -   If you use other ports than the product provided you need to modify
@@ -206,6 +207,7 @@ Always check the created response file if it meets your required set up.
     or *stage* environment, please also refer to the "-e" procedure
     argument)
 
+<br/>
 4.  ***OPTIONAL: Customer specific post processing***
     
     Specific post processing code can be inserted. Procedure needs to be modified,
@@ -241,8 +243,9 @@ Always check the created response file if it meets your required set up.
     The sample python script *jvm\_arguments.py* is included in this
     package.
 
-5.  OPTIONAL: Modify CreateServerAliases\
-    \
+<br/>
+5.  ***OPTIONAL: Modify CreateServerAliases ***
+   
     This function creates server aliases based on input values made. You
     should modify it when you are using aliases for your server names.
     Only relevant for option \"-a config\". Alias is only required when
@@ -280,8 +283,8 @@ Always check the created response file if it meets your required set up.
 
 <!-- -->
 
-3.  Usage
-    =====
+Usage
+=====
 
     3.  Syntax
         ------
