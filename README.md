@@ -8,9 +8,7 @@ Contact: niewolik@de.ibm.com
 
 Revision: 0.1
 
-<span style="color: #f2cf4a; font-family: Babas; font-size: 6em;">INSPIRATION DAY</span>
-
-[1 General](###general)
+[1 General](#general)
 
 [2 Installation](#installation)
 
