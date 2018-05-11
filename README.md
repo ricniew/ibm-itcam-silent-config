@@ -137,7 +137,7 @@ instance. For the authentication client SOAP properties are used.
 **Please check below for possible changes you may need to perform.**
 Always check the created response file if it meets your required set up.
 
-1.  In case you configure a new DC the following configuration options are not enabled by default:
+1.  **In case you configure a new DC the following configuration options are not enabled by default:**
 
        -   Integration of the DC with the ITCAM for Transactions
 
@@ -172,7 +172,7 @@ Always check the created response file if it meets your required set up.
        > tema.host.v6=\
        > tema.port.v6=63336
 
-2.  For configuration actions (configure, unconfigure and migration):
+2.  **For configuration actions (configure, unconfigure and migration):**
 
        -   No *Backup of the WebSphere configuration* is performed by default.
     If you wish so you need to modify
@@ -191,21 +191,20 @@ Always check the created response file if it meets your required set up.
     user/password instead (***was.wsadmin.username***,
     ***was.wsadmin.password***)
 
-3.  Only if using ITCAM for Diagnostic Managing Server
-    (*ms.connect=True*)
+3.  **Only if using ITCAM for Diagnostic Managing Server* (ms.connect=True)**
 
--   If you use other ports than the product provided you need to modify
+       -   If you use other ports than the product provided you need to modify
     "\# ITCAM for Application Diagnostics" section in function
     *CreateConfigRespFile.*
 
--   The function *CreateAmVariables* sets variables (AMHOST, AMHOME)
+       -   The function *CreateAmVariables* sets variables (AMHOST, AMHOME)
     used for configuration options for the ITCAM Managing Server. Before
     execution you **must** set the hostname and home directory according
     to your environment. Two different hostnames can be set (for *prod*
     or *stage* environment, please also refer to the "-e" procedure
     argument)
 
-4.  OPTIONAL: Customer specific post processing
+4.  ***OPTIONAL: Customer specific post processing***
     
     Specific post processing code can be inserted. Procedure needs to be modified,
     remove comment from almost the end of the script:
