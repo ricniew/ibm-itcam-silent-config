@@ -2,7 +2,7 @@
 Create ITCAM data collector silent response file by minimizing user input 
 # IBM APM plugin for Grafana
 
-Author: Rafal Szypulka 
+Author: Richard Niewolik
 
 Contact: niewolik@de.ibm.com
 
