@@ -219,7 +219,7 @@ Always check the created response file if it meets your required set up.
        To\
     >    PostProcessing\
 
-  Add required code to the function *PostProcessing*
+   Add required code to the function *PostProcessing*
   
    A sample code could be:
     ...\
