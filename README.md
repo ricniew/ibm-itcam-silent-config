@@ -172,7 +172,7 @@ Always check the created response file if it meets your required set up.
        > tema.host.v6=\
        > tema.port.v6=63336
 
-\
+
 2.  **For configuration actions (configure, unconfigure and migration):**
 
        -   No *Backup of the WebSphere configuration* is performed by default.
