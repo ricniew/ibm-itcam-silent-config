@@ -136,8 +136,8 @@ valid for the most popular set up with a DC monitoring a WebSphere
 instance. For the authentication client SOAP properties are used.
 **Please check below for possible changes you may need to perform.**
 Always check the created response file if it meets your required set up.
+<br/>  
  
- <br/>  
 1.  **In case you configure a new DC the following configuration options are not enabled by default:**
 
        -   Integration of the DC with the ITCAM for Transactions
@@ -172,8 +172,8 @@ Always check the created response file if it meets your required set up.
        > config.tema.v6=false\
        > tema.host.v6=\
        > tema.port.v6=63336
-  
- <br/> 
+<br/>   
+
 2.  **For configuration actions (configure, unconfigure and migration):**
 
        -   No *Backup of the WebSphere configuration* is performed by default.
@@ -192,8 +192,8 @@ Always check the created response file if it meets your required set up.
     *CreateMigrateRespFil*e and *CreateConfigRespFile* to set
     user/password instead (***was.wsadmin.username***,
     ***was.wsadmin.password***)
+<br/> 
 
-<br/>
 3.  **Only if using ITCAM for Diagnostic Managing Server* (ms.connect=True)**
 
        -   If you use other ports than the product provided you need to modify
@@ -206,8 +206,8 @@ Always check the created response file if it meets your required set up.
     to your environment. Two different hostnames can be set (for *prod*
     or *stage* environment, please also refer to the "-e" procedure
     argument)
+<br/> 
 
-<br/>
 4.  ***OPTIONAL: Customer specific post processing***
     
     Specific post processing code can be inserted. Procedure needs to be modified,
@@ -242,8 +242,8 @@ Always check the created response file if it meets your required set up.
     \
     The sample python script *jvm\_arguments.py* is included in this
     package.
-
-<br/>
+<br/> 
+  
 5.  ***OPTIONAL: Modify CreateServerAliases ***
    
     This function creates server aliases based on input values made. You
@@ -281,7 +281,7 @@ Always check the created response file if it meets your required set up.
     \"lx2266mu\_Proc\_My\_Server\_02;lx2266\_BPM\_01\"\
     )
 
-<!-- -->
+
 
 Usage
 =====
