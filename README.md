@@ -83,6 +83,7 @@ and IBM Cloud Application Performance Management, Private 8.1.4*.
 [[https://www.ibm.com/support/knowledgecenter/en/SSHLNR\_8.1.4/com.ibm.pm.doc/install/was\_migrate\_dcsilent.htm]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_migrate_dcsilent.htm)
 
 **Unconfiguring the data collector in silent mode**
+
 [Version 7.2]
 
 [[https://www.ibm.com/support/knowledgecenter/en/SS3JRN\_7.2.0/com.ibm.itcamfapps\_ad.doc\_72/ecam\_guide\_72\_new/silent\_unconfig\_was\_dc.html]{.underline}](https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_unconfig_was_dc.html)
