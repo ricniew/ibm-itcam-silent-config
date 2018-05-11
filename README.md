@@ -190,11 +190,10 @@ Always check the created response file if it meets your required set up.
        -   Configuration option ***was.client.props=true*** is used by default.
     If you are not using it you need to modify *CreateUnConfigRespFile*,
     *CreateMigrateRespFil*e and *CreateConfigRespFile* to set
-    user/password instead (***was.wsadmin.username***,
-    ***was.wsadmin.password***)
+    user/password instead (***was.wsadmin.username, was.wsadmin.password***)
 <br/> 
 
-3.  **Only if using ITCAM for Diagnostic Managing Server* (ms.connect=True)**
+3.  **Only if using ITCAM for Diagnostic Managing Server (ms.connect=True)**
 
        -   If you use other ports than the product provided you need to modify
     "\# ITCAM for Application Diagnostics" section in function
@@ -286,8 +285,8 @@ Always check the created response file if it meets your required set up.
 Usage
 =====
 
-    3.  Syntax
-        ------
+Syntax
+------
 
 itmcam-cfg.sh { -h WAS home } \[ -p \]\
 { -a \[config {-v} { -m \[yn\|yndiag\|diag\] } { -e \[prod\|stage\] }\
