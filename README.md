@@ -1,58 +1,37 @@
-![](media/image1.png){width="8.4625in" height="2.3743055555555554in"}
 
-> IBMÂ® TivoliÂ® Software
+[1 General](#general)
 
-Solution to create an ITCAM Data Collector for WebSphere silent
-configuration file
+[2 Installation](#installation)
 
-Document version 1.0
+[2.1 Supported Operating System](#supported-operating-system)
 
-> Richard Niewolik
->
-> IBM AVP EMEA IT Specialist
+[2.2 Preparation](#preparation)
 
-![](media/image2.jpeg){width="1.18125in" height="0.4423611111111111in"}
+[3 Usage](#usage)
 
-[1 General 2](#general)
+[3.1 Syntax](#syntax)
 
-[2 Installation 3](#installation)
+[3.2 Sample executions for Configuration](#sample-executions-for-configuration)
 
-[2.1 Supported Operating System 3](#supported-operating-system)
+[3.3 Samples executions for Unconfiguration](#samples-executions-for-unconfiguration)
 
-[2.2 Preparation 3](#preparation)
+[3.4 Sample executions for Migration](#sample-executions-for-migration)
 
-[3 Usage 6](#usage)
+[4 Troubleshooting](#troubleshooting)
 
-[3.1 Syntax 6](#syntax)
+[5 Appendixes](#appendixes)
 
-[3.2 Sample executions for Configuration
-7](#sample-executions-for-configuration)
+[5.1 Sample configuration response file](#sample-configuration-response-file)
 
-[3.3 Samples executions for Unconfiguration
-8](#samples-executions-for-unconfiguration)
+[5.2 Sample unconfiguration response file](#sample-unconfiguration-response-file)
 
-[3.4 Sample executions for Migration
-8](#sample-executions-for-migration)
+[5.3 Sample migration response file](#sample-migration-response-file)
 
-[4 Troubleshooting 9](#troubleshooting)
+[5.4 Sample execution flows](#sample-execution-flows)
 
-[5 Appendixes 10](#appendixes)
+[5.4.1 Configuration (create response file only)](#configuration-create-response-file-only)
 
-[5.1 Sample configuration response file
-10](#sample-configuration-response-file)
-
-[5.2 Sample unconfiguration response file
-10](#sample-unconfiguration-response-file)
-
-[5.3 Sample migration response file 11](#sample-migration-response-file)
-
-[5.4 Sample execution flows 11](#sample-execution-flows)
-
-[5.4.1 Configuration (create response file only)
-11](#configuration-create-response-file-only)
-
-[5.4.2 Configuration of a single server with post process
-13](#configuration-of-a-single-server-with-post-process)
+[5.4.2 Configuration of a single server with post process](#configuration-of-a-single-server-with-post-process)
 
 General
 =======
