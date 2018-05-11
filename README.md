@@ -221,24 +221,22 @@ Always check the created response file if it meets your required set up.
    Add required code to the function *PostProcessing*
   
    A sample code could be:
+   > 
+   > if \[ \"\${ACTION}\" == \"config\" \] ; then\
+   > \#\-\-\-\-\-\-\-\-\-\-\-\-\-- CONFIG
+   > \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--\
+   > echo \"INFO Customer specific post processing for \\\"-a config\\\"
+   > defined\"\
+   > echo \"INFO Post processing: Delete \\\"-verbosegc\\\" from the JVM arguments for servers configured previously\"\
+   > echo \"\${WSADMIN\_HOME}/wsadmin.sh -lang jython -f jvm\_arguments.py del \${SERVERJVM\[\*\]}\" --verbosegc\
+   > \${WSADMIN\_HOME}/wsadmin.sh -lang jython -f jvm\_arguments.py del
+   > \"\${SERVERJVM\[\*\]}\" --verbosegc\
+   > if \[ \$? -ne 0 \] ; then\
+   > echo \" ERROR During post processing\"\
+   > return 1\
+   > fi\
     ...\
-    if \[ \"\${ACTION}\" == \"config\" \] ; then\
-    \#\-\-\-\-\-\-\-\-\-\-\-\-\-- CONFIG
-    \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--\
-    echo \"INFO Customer specific post processing for \\\"-a config\\\"
-    defined\"\
-    echo \"INFO Post processing: Delete \\\"-verbosegc\\\" from the JVM
-    arguments for servers configured previously\"\
-    echo \"\${WSADMIN\_HOME}/wsadmin.sh -lang jython -f
-    jvm\_arguments.py del \${SERVERJVM\[\*\]}\" --verbosegc\
-    \${WSADMIN\_HOME}/wsadmin.sh -lang jython -f jvm\_arguments.py del
-    \"\${SERVERJVM\[\*\]}\" --verbosegc\
-    if \[ \$? -ne 0 \] ; then\
-    echo \" ERROR During post processing\"\
-    return 1\
-    fi\
-    ...\
-    \
+    
     The sample python script *jvm\_arguments.py* is included in this
     package.
 <br/> 
