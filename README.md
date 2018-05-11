@@ -136,7 +136,8 @@ valid for the most popular set up with a DC monitoring a WebSphere
 instance. For the authentication client SOAP properties are used.
 **Please check below for possible changes you may need to perform.**
 Always check the created response file if it meets your required set up.
-
+  
+    
 1.  **In case you configure a new DC the following configuration options are not enabled by default:**
 
        -   Integration of the DC with the ITCAM for Transactions
@@ -171,8 +172,8 @@ Always check the created response file if it meets your required set up.
        > config.tema.v6=false\
        > tema.host.v6=\
        > tema.port.v6=63336
-
-
+  
+  
 2.  **For configuration actions (configure, unconfigure and migration):**
 
        -   No *Backup of the WebSphere configuration* is performed by default.
