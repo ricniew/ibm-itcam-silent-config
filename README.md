@@ -153,39 +153,39 @@ Always check the created response file if it meets your required set up.
      modified and the function *CreateConfigRespFile* needs to be adjusted
      with the required options to be used (modify *False* to *True*)
 
-   > \# Integration of the DC with the ITCAM for Transactions\"\
-   > ttapi.enable=False\
-   > ttapi.host=yourhost\
-   > ttapi.port=\
+       > \# Integration of the DC with the ITCAM for Transactions\"\
+       > ttapi.enable=False\
+       > ttapi.host=yourhost\
+       > ttapi.port=\
 
-   > \# Integration of the DC with the ITCAM for SOA\
-   > soa.enable=False\
+       > \# Integration of the DC with the ITCAM for SOA\
+       > soa.enable=False\
 
-   > \# Integration of the DC with the Tivoli Performance Monitoring\
-   > tpv.enable=False\
+       > \# Integration of the DC with the Tivoli Performance Monitoring\
+       > tpv.enable=False\
 
-   > \# Integration of the DC with the ITCAM Diagnostics Tool\
-   > de.enable=False\
+       > \# Integration of the DC with the ITCAM Diagnostics Tool\
+       > de.enable=False\
 
-   > \# Integration of the data collector with ITCAM Agent for WebSphere version 6 (7.2)\
-   > config.tema.v6=false\
-   > tema.host.v6=\
-   > tema.port.v6=63336
+       > \# Integration of the data collector with ITCAM Agent for WebSphere version 6 (7.2)\
+       > config.tema.v6=false\
+       > tema.host.v6=\
+       > tema.port.v6=63336
 
 2.  For configuration actions (configure, unconfigure and migration):
 
--   No *Backup of the WebSphere configuration* is performed by default.
+       -   No *Backup of the WebSphere configuration* is performed by default.
     If you wish so you need to modify
     ***was.backup.configuration=True*** and a set directory in
     *CreateConfigRespFile*, *CreateMigrateRespFil*e and
     *CreateUnConfigRespFile*)
 
--   Configuration option ***default.hostip*** is not set by default. If
+       -   Configuration option ***default.hostip*** is not set by default. If
     the computer system uses multiple IP addresses, specify the IP
     address for the data collector to use. You may need to add your own
     code to discover it automatically.
 
--   Configuration option ***was.client.props=true*** is used by default.
+       -   Configuration option ***was.client.props=true*** is used by default.
     If you are not using it you need to modify *CreateUnConfigRespFile*,
     *CreateMigrateRespFil*e and *CreateConfigRespFile* to set
     user/password instead (***was.wsadmin.username***,
