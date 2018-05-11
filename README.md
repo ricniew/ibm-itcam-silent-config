@@ -113,9 +113,9 @@ contains following files:
     OPTIONAL: Customer specific post processing"
 
 Apart of the *itcam-cfg.sh* following existing WebSphere and ITCAM shell
-scripts are used as well.\
-\
-*- ITCAMDCHOME/version/bin/\[config,unconfig,migrate\].sh\
+scripts are used as well:
+
+- ITCAMDCHOME/version/bin/\[config,unconfig,migrate\].sh\
 - WASHOME/bin/\[wsadmin,manageprofiles\].sh*
 
 Supported Operating System
