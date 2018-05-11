@@ -18,8 +18,8 @@ Contents
 [**2. Installation**](#installation)
 
 
-Introduction
-============
+1. Introduction
+===============
 
 ITCAM Data Collector for WebSphere can be configured interactively with the ITCAM Data Collector for WebSphere Configuration utility but if you want to configure many application server instances, or if you want to automate the process it might be more convenient to configure the data collector in silent mode.  When you configure the data collector in silent mode, you first specify configuration options in a properties file. This solution helps you to create such response files and it discovers configuration options values automatically. That way you omit possible user errors, speed up the configuration process and makes it easier to integrate configuration related work into existing automation procedures. 
 
@@ -44,8 +44,8 @@ Version 7.2 [*https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ib
 Version 7.3 [*https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_unconfigure_dcsilent.htm*] (https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_unconfigure_dcsilent.htm)
 
 
-Installation
-============
+2. Installation
+===============
 Unzip the attached archive to a temporary directory on the host were your ITCAM agent/datacollector and WebSPhere server are running. It contains following files:
 
 -	Shell procedure itcam_cfg.sh 
