@@ -25,22 +25,23 @@ ITCAM Data Collector for WebSphere can be configured interactively with the ITCA
 
 Response files are created based on the descriptions found the IBM Knowledge Center for Tivoli Composite Application Manager for Applications 7.2.0 and IBM Cloud Application Performance Management, Private 8.1.4.
 
-Configuring the data collector in silent mode.
+**Configuring the data collector in silent mode:**
 
 Version 7.2 [*https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_config_dcsilent_properties_file.htm#was_config_dcsilent_properties_file*] (https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_config_dcsilent_properties_file.htm#was_config_dcsilent_properties_file)
 Version 7.3 [*https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_config_was_dc.html*] (https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_config_was_dc.html)
 
-Migrating the data collector in silent mode.
+**Migrating the data collector in silent mode:**
 
-Version 7.2
-Version 7.3:
+*Version 7.2* [*https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_migrate_was_dc.html*] (https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_migrate_was_dc.html)
+*Version 7.3* [*https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_migrate_dcsilent.htm*] (https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_migrate_dcsilent.htm)
 
-Unconfiguring the data collector in silent mode.
-Version 7.2
-Version 7.3:
+**Unconfiguring the data collector in silent mode:**
+Version 7.2 [*https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_unconfig_was_dc.html*] (https://www.ibm.com/support/knowledgecenter/en/SS3JRN_7.2.0/com.ibm.itcamfapps_ad.doc_72/ecam_guide_72_new/silent_unconfig_was_dc.html)
+Version 7.3 [*https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_unconfigure_dcsilent.htm*] (https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_unconfigure_dcsilent.htm)
+
 
 Installation
-=======
+============
 Unzip the attached archive to a temporary directory on the host were your ITCAM agent/datacollector and WebSPhere server are running. It contains following files:
 
 -	Shell procedure itcam_cfg.sh 
