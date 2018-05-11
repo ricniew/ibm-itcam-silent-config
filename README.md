@@ -153,25 +153,24 @@ If you would like to use any of that options the procedure must be
 modified and the function *CreateConfigRespFile* needs to be adjusted
 with the required options to be used (modify *False* to *True*)
 
-    > \# Integration of the DC with the ITCAM for Transactions\"\
-    > ttapi.enable=False\
-    > ttapi.host=yourhost\
-    > ttapi.port=\
+   > \# Integration of the DC with the ITCAM for Transactions\"\
+   > ttapi.enable=False\
+   > ttapi.host=yourhost\
+   > ttapi.port=\
 
-    > \# Integration of the DC with the ITCAM for SOA\
-    > soa.enable=False\
+   > \# Integration of the DC with the ITCAM for SOA\
+   > soa.enable=False\
 
-    > \# Integration of the DC with the Tivoli Performance Monitoring\
-    > tpv.enable=False\
+   > \# Integration of the DC with the Tivoli Performance Monitoring\
+   > tpv.enable=False\
 
-    > \# Integration of the DC with the ITCAM Diagnostics Tool\
-    > de.enable=False\
+   > \# Integration of the DC with the ITCAM Diagnostics Tool\
+   > de.enable=False\
 
-    > \# Integration of the data collector with ITCAM Agent for WebSphere
-    > version 6 (7.2)\
-    > config.tema.v6=false\
-    > tema.host.v6=\
-    > tema.port.v6=63336
+   > \# Integration of the data collector with ITCAM Agent for WebSphere version 6 (7.2)\
+   > config.tema.v6=false\
+   > tema.host.v6=\
+   > tema.port.v6=63336
 
 2.  For configuration actions (configure, unconfigure and migration):
 
