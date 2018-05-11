@@ -213,9 +213,9 @@ with the required options to be used (modify *False* to *True*)
     Specific post processing code can be inserted. Procedure needs to be modified,
     remove comment from almost the end of the script:
 >   ...
->  # By default no post processing defined.\
->  # You can uncomment the line below and modify function PostProcessing
->    #PostProcessing\
+>  \#By default no post processing defined.
+>  \#You can uncomment the line below and modify function PostProcessing
+>   \# PostProcessing
      To
 >    PostProcessing
 
