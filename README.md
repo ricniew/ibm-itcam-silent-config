@@ -3,10 +3,12 @@ Create ITCAM data collector silent response file by minimizing user input
 # IBM APM plugin for Grafana
 
 Author: Richard Niewolik
-<span style="color: #f2cf4a; font-family: Babas; font-size: 2em;">INSPIRATION DAY</span>
+
 Contact: niewolik@de.ibm.com
 
 Revision: 0.1
+
+<span style="color: #f2cf4a; font-family: Babas; font-size: 2em;">INSPIRATION DAY</span>
 
 [1 General](#general)
 
