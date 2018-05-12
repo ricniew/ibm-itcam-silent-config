@@ -286,8 +286,8 @@ Syntax
 
 > itmcam-cfg.sh { -h WAS home } \[ -p \]\
 > { -a \[config {-v} { -m \[yn\|yndiag\|diag\] } { -e \[prod\|stage\] }\
-     > \ \ \        unconfig {-v}\
-     >       migrate {-f} {-t} \] }\
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unconfig {-v}\
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;migrate {-f} {-t} \] }\
 > \[-s servern1,servern2,\...}\
 > \[ -x \] \[ -d \]
 
