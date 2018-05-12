@@ -311,11 +311,9 @@ Syntax
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;server (MS) ONLY. Function *CreateAmVariables* must contain the correct\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values for your environment (MS server host)
 
-*-e* &nbsp;&nbsp;&nbsp;Deployment environment \[prod, stage\]. Only relevant for
-action=config. Used to\
-verify which MS Server host needs to be used in case of a \"-m \[diag,
-yndiag\]\"\
-configuration (set in function *CreateAmVariables*)
+*-e*    Deployment environment \[prod, stage\]. Only relevant for action=config. Used to verify which\
+        ITCAM Managaing Server host needs to be used in case of a \"-m \[diag, yndiag\]\" configuration\
+        (set in function *CreateAmVariables*)
 
 *-v* &nbsp;&nbsp;&nbsp;Version to configure/unconfigure. Only relevant for action \"-a
 \[config, unconfig\]\"
