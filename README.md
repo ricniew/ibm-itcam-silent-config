@@ -294,13 +294,12 @@ Syntax
 *-h* &nbsp;&nbsp;&nbsp;WebSphere home directory
 
 *-p* &nbsp;&nbsp;&nbsp;SOAP port used to connect to Dmgr (**optional**). Only relevant in case of \"-a\=config\"\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By default this port is retrieved by a wsadmin Python script. However\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;you can use this option to override the Dmgr port discovered by the\
-&nbsp;&nbsp;internal Python script.\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By default this port is retrieved by a wsadmin Python script. However you can use this\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;option to override the Dmgr port discovered by the internal Python script.\
 
 *-a* &nbsp;&nbsp;&nbsp;Configuration action \[config, unconfig, migrate\]
 
-*-m* Configuration mode \[yn, yndiag, diag\]. Only relevant for action
+*-m* &nbsp;&nbsp;&nbsp;Configuration mode \[yn, yndiag, diag\]. Only relevant for action
 \"-a config\"\
 yn= Data collector (DC) is configured to communicate with the ITCAM
 Agent\
