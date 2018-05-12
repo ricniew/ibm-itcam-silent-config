@@ -301,46 +301,43 @@ Syntax
 
 *-m* &nbsp;&nbsp;&nbsp;Configuration mode \[yn, yndiag, diag\]. Only relevant for action
 \"-a config\"\
-yn= Data collector (DC) is configured to communicate with the ITCAM
-Agent\
-only (ITM/APM WebSphere Agent)\
-yndiag= Data collector (DC) is configured to send data to the ITCAM
-Managing\
-server (MS) and to the ITCAM Agent. Function *CreateAmVariables* must\
-contain the correct values for your environment (MS server host and\
-home directorsy)\
-diag= Data collector (DC) is configured to send data to the ITCAM
-Managing\
-server (MS) ONLY. Function *CreateAmVariables* must contain the correct\
-values for your environment (MS server host)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yn= Data collector (DC) is configured to communicate with the ITCAM Agent\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;only (ITM/APM WebSphere Agent)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yndiag= Data collector (DC) is configured to send data to the ITCAM Managing\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;server (MS) and to the ITCAM Agent. Function *CreateAmVariables* must\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contain the correct values for your environment (MS server host and\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;home directorsy)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diag= Data collector (DC) is configured to send data to the ITCAM Managing\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;server (MS) ONLY. Function *CreateAmVariables* must contain the correct\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values for your environment (MS server host)
 
-*-e* Deployment environment \[prod, stage\]. Only relevant for
+*-e* &nbsp;&nbsp;&nbsp;Deployment environment \[prod, stage\]. Only relevant for
 action=config. Used to\
 verify which MS Server host needs to be used in case of a \"-m \[diag,
 yndiag\]\"\
 configuration (set in function *CreateAmVariables*)
 
-*-v* Version to configure/unconfigure. Only relevant for action \"-a
+*-v* &nbsp;&nbsp;&nbsp;Version to configure/unconfigure. Only relevant for action \"-a
 \[config, unconfig\]\"
 
-*-f* Version to migrate from (old version). Only relevant for action
+*-f* &nbsp;&nbsp;&nbsp;Version to migrate from (old version). Only relevant for action
 \"-a migrate\"
 
-*-t* Version to migrate to (new version). Only relevant for action \"-a
+*-t* &nbsp;&nbsp;&nbsp;Version to migrate to (new version). Only relevant for action \"-a
 migrate\"
 
-*-s* A list of servers to process separated by comma (!must be without
+*-s* &nbsp;&nbsp;&nbsp;A list of servers to process separated by comma (!must be without
 any space after\
 comma). All server set in this parameter must be running otherwise not
 processed!
 
-***-x*** If set action (-a argument) is executed. By default only the
+***-x*** &nbsp;&nbsp;&nbsp;If set action (-a argument) is executed. By default only the
 silent response file is\
 going to be created. Note that checks to ensure a successful execution
 are still\
 performed. Hence check both response file and the message flow
 
-*-d* If set, temporary files are deleted. By default those files are not
+*-d* &nbsp;&nbsp;&nbsp;If set, temporary files are deleted. By default those files are not
 deleted but\
 overwritten during the next call
 
