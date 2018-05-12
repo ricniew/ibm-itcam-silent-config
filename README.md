@@ -301,15 +301,15 @@ Syntax
 
 *-m* &nbsp;&nbsp;&nbsp;Configuration mode \[yn, yndiag, diag\]. Only relevant for action
 \"-a config\"\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yn= Data collector (DC) is configured to communicate with the ITCAM Agent\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;only (ITM/APM WebSphere Agent)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yndiag= Data collector (DC) is configured to send data to the ITCAM Managing\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;server (MS) and to the ITCAM Agent. Function *CreateAmVariables* must\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contain the correct values for your environment (MS server host and\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;home directorsy)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diag= Data collector (DC) is configured to send data to the ITCAM Managing\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;server (MS) ONLY. Function *CreateAmVariables* must contain the correct\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values for your environment (MS server host)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yn= Data collector (DC) is configured to communicate with the ITCAM Agent\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;only (ITM/APM WebSphere Agent)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yndiag= Data collector (DC) is configured to send data to the ITCAM Managing\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;server (MS) and to the ITCAM Agent. Function *CreateAmVariables* must\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contain the correct values for your environment (MS server host and\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;home directorsy)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diag= Data collector (DC) is configured to send data to the ITCAM Managing\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;server (MS) ONLY. Function *CreateAmVariables* must contain the correct\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values for your environment (MS server host)
 
 *-e* &nbsp;&nbsp;&nbsp;Deployment environment \[prod, stage\]. Only relevant for
 action=config. Used to\
