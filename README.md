@@ -291,16 +291,16 @@ Syntax
 > \[-s servern1,servern2,\...}\
 > \[ -x \] \[ -d \]
 
-*-h* WebSphere home directory
+*-h* &nbsp;&nbsp;&nbsp;WebSphere home directory
 
-*-p* SOAP port used to connect to Dmgr (**optional**). Only relevant in
+*-p* &nbsp;&nbsp;&nbsp;SOAP port used to connect to Dmgr (**optional**). Only relevant in
 case of \"-a config\"\
 By default this port is retrieved by a wsadmin Python script. However
 you can use\
 this option to override the Dmgr port discovered by the internal Python
 script.
 
-*-a* Configuration action \[config, unconfig, migrate\]
+*-a* &nbsp;&nbsp;&nbsp;Configuration action \[config, unconfig, migrate\]
 
 *-m* Configuration mode \[yn, yndiag, diag\]. Only relevant for action
 \"-a config\"\
