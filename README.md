@@ -294,11 +294,10 @@ Syntax
 *-h* &nbsp;&nbsp;&nbsp;WebSphere home directory
 
 *-p* &nbsp;&nbsp;&nbsp;SOAP port used to connect to Dmgr (**optional**). Only relevant in
-case of \"-a config\"\
-By default this port is retrieved by a wsadmin Python script. However
-you can use\
-this option to override the Dmgr port discovered by the internal Python
-script.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case of \"-a config\"\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By default this port is retrieved by a wsadmin Python script. However
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;you can use this option to override the Dmgr port discovered by the internal 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python script.
 
 *-a* &nbsp;&nbsp;&nbsp;Configuration action \[config, unconfig, migrate\]
 
