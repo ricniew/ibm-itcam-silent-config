@@ -6,6 +6,7 @@ Author: Richard Niewolik
 Contact: niewolik@de.ibm.com
 #
 Revision: 0.1
+
 [0 Link text](#linktext)
 
 [1 General](#general)
@@ -94,8 +95,8 @@ and IBM Cloud Application Performance Management, Private 8.1.4*.
 
 [https://www.ibm.com/support/knowledgecenter/en/SSHLNR\_8.1.4/com.ibm.pm.doc/install/was\_unconfigure\_dcsilent.htm](https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_unconfigure_dcsilent.htm)
 
-0 Link text
-===========
+Link text
+=========
 sadfdsaf
 
 Installation
