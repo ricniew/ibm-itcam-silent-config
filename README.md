@@ -384,14 +384,14 @@ Sample executions for Migration
 4 Troubleshooting
 =================
 
-Temporary files created are not deleted by default (prefixed by tmp..\[filename\]). You may use them for problem analysis in case of
-errors:\
+Temporary files created are not deleted by default (prefixed by tmp.\[filename\]). You may use them for problem analysis in case of
+errors:
 
 - tmp.itcamdc.silentinput.txt (response file created)
 - tmp.itcamdc.websphere\_data.conf (data retrieved using wsadmin.sh)
 - tmp.itcamdc.wsadminScript.py (Python script used for wsadmin.sh)
 
-**Please note: **
+**Please note:**
 
 -   All servers must be running in order to perform any configuration
     action.
@@ -401,45 +401,36 @@ errors:\
 -   Procedure must be started on the host where WebSphere server is
     running
 
-If there are any errors which may prevent a successful execution an
-error message will be thrown. After installation please always start the
-procedure without argument "-x", check response file created and the
-message flow.
+If there are any errors which may prevent a successful execution an error message will be thrown. After installation please always start the procedure without argument "-x", check response file created and the message flow.
 
-Server will also not be processed in case of, for example:\
-- configured already and you choose *--a config*\
-- is not configured and you choose *--a unconfig, migrate\
-*You will see errors or warning messages indicating the problem
-encountered.
+Server will also not be processed in case of:\
+- configured already and you choose *-a config*
+- is not configured and you choose *-a unconfig, migrate*
 
-The procedure tries to discover automatically JAVAHOME, DCHOME, ITMHOME,
-WSADMINHOME. If it is not possible error message is reported and you may
-need to set e.g. JAVA\_HOME manually before execution.
+You will see errors or warning messages indicating the problem encountered.
 
-Following procedures are used which are installed by the ITCAM for
-WebSphere product.\
-DCHOME/version/bin/\[config,unconfig,migrate\].sh\
-\
-If these names are changed by IBM, you need to modify the procedure. If
-scripts fail to run it could be related to the response file created.
-Execute it manually and check messages.
+The procedure tries to discover automatically JAVAHOME, DCHOME, ITMHOME, WSADMINHOME. If it is not possible error message is reported and you may need to set e.g. JAVA\_HOME manually before execution.
 
-Following procedures are used which are installed by the IBM WebSphere\
-product:\
-WASHOME/bin/\[wsadmin,manageprofiles\].sh\
-\
-If these names will be changed by IBM, you need to modify the procedure.
-If scripts fail to run please execute them manually as used in this
-procedure and check messages and output:\
-\
-WASHOME/bin/wsadmin.sh -lang jython -f tmp.itcamdc.wsadminScript.py\
-WASHOME/bin/manageprofiles.sh
+Following procedures are used which are installed by the ITCAM for WebSphere product.
+
+    DCHOME/version/bin/[config,unconfig,migrate].sh
+    
+If the names are changed by IBM, you need to modify the procedure. If these scripts fail to run it could be related to the response file created. Execute it manually and check messages.
+
+Following procedures are used which are installed by the IBM WebSphere product:
+
+    WASHOME/bin/[wsadmin,manageprofiles].sh
+
+If the names will be changed by IBM, you need to modify the procedure. If these scripts fail to run please execute them manually and check messages and output, for example:
+
+    WASHOME/bin/wsadmin.sh -lang jython -f tmp.itcamdc.wsadminScript.py
+    WASHOME/bin/manageprofiles.sh
 
 5 Appendixes
 ============
 
-    7.  Sample configuration response file
-        ----------------------------------
+Sample configuration response file
+----------------------------------
 
 ITCAM Agent for WebSphere only configuration:
 
