@@ -104,8 +104,8 @@ contains following files:
 -   This README document
 
 -   Python procedure *modify-jvm-argumenst.py*\
-    Optional: It can be used to modify or set JVM arguments. For example *-verbosegc* is set by default during DC configuration.\
-    You can use the procedure with *wsadmin.sh* and delete *-verbosegc* from the JVM arguments. Please refer to chapter "Preparation", \
+    Optional: It can be used to modify or set JVM arguments. For example *-verbosegc* is set by default during DC configuration.
+    You can use the procedure with *wsadmin.sh* and delete *-verbosegc* from the JVM arguments. Please refer to chapter "Preparation", 
     Point "'4. OPTIONAL: Customer specific post processing*"
 
 Apart of the *itcam-cfg.sh* following existing WebSphere and ITCAM shell scripts are used as well:
