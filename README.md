@@ -148,23 +148,23 @@ Always check the created response file if it meets your required set up.
      modified and the function *CreateConfigRespFile* needs to be adjusted
      with the required options to be used (modify *False* to *True*)
 
-       > \# Integration of the DC with the ITCAM for Transactions"
-       > ttapi.enable=False
-       > ttapi.host=yourhost
+       > \# Integration of the DC with the ITCAM for Transactions"\
+       > ttapi.enable=False\
+       > ttapi.host=yourhost\
        > ttapi.port=
 
-       > \# Integration of the DC with the ITCAM for SOA
+       > \# Integration of the DC with the ITCAM for SOA\
        > soa.enable=False
 
-       > \# Integration of the DC with the Tivoli Performance Monitoring
+       > \# Integration of the DC with the Tivoli Performance Monitoring\
        > tpv.enable=False
 
-       > \# Integration of the DC with the ITCAM Diagnostics Tool
+       > \# Integration of the DC with the ITCAM Diagnostics Tool\
        > de.enable=False
 
-       > \# Integration of the data collector with ITCAM Agent for WebSphere version 6 (7.2)
-       > config.tema.v6=false
-       > tema.host.v6=
+       > \# Integration of the data collector with ITCAM Agent for WebSphere version 6 (7.2)\
+       > config.tema.v6=false\
+       > tema.host.v6=\
        > tema.port.v6=63336
 <br/>   
 
