@@ -5,7 +5,7 @@ Author: Richard Niewolik
 
 Contact: niewolik@de.ibm.com
 
-Revision: 0.1
+Revision: 2.2
 
 #
 
@@ -94,7 +94,7 @@ and IBM Cloud Application Performance Management, Private 8.1.4*.
 2 Installation
 ==============
 
-Unzip the attached archive to a temporary directory on the host were your ITCAM Agent\+Datacollector and WebSPhere server are running. It
+Download the latest release of the script [here](https://github.com/ricniew/ibm-itcam-silent-config/releases) and unzip to a temporary directory on the host were your ITCAM Agent\+Datacollector and WebSPhere server are running. It
 contains following files:
 
 -   Shell procedure *itcam\_cfg.sh*\
