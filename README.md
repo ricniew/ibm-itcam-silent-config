@@ -294,7 +294,7 @@ Syntax
 
     -h    home directory
 
-    -p    SOAP port used to connect to Dmgr (OPTIONAL). Only relevant in case of "-a=config"
+    -p    SOAP port used to connect to Dmgr (OPTIONAL). Only relevant in case of "-a=config".
           By default this port is retrieved by a wsadmin Python script. However you can use this
           option to override the Dmgr port discovered by the internal Python script.
 
@@ -303,21 +303,19 @@ Syntax
     -m    Configuration mode [yn, yndiag, diag]. Only relevant for action "-a config"
           yn= Data collector (DC) is configured to communicate with the ITCAM Agent  
               only (ITM/APM WebSphere Agent).
-          yndiag= Data collector (DC) is configured to send data to the ITCAM Managing
-              server (MS) and to the ITCAM Agent. Function *CreateAmVariables* must 
-              contain the correct values for your environment (MS server host and
-              home directorsy).
-          diag= Data collector (DC) is configured to send data to the ITCAM Managing
-              server (MS) ONLY. Function "CreateAmVariables" must contain the correct
-              values for your environment (MS server host).
+          yndiag= Data collector (DC) is configured to send data to the ITCAM Managing server (MS) 
+              and to the ITCAM Agent. Function "CreateAmVariables" must contain the correct values 
+              for your environment (MS server host and home directorsy).
+          diag= Data collector (DC) is configured to send data to the ITCAM Managing server (MS) ONLY. 
+              Function "CreateAmVariables" must contain the correct values for your environment.
 
     -e    Deployment environment [prod, stage]. Only relevant for action=config. Used to verify which
           ITCAM Managaing Server host needs to be used in case of a "-m [diag, yndiag]" configuration
           (set in function "CreateAmVariables").
 
-    -v Version to configure/unconfigure. Only relevant for action "-a [config, unconfig]"
+    -v    Version to configure/unconfigure. Only relevant for action "-a [config, unconfig]"
 
-    -f Version to migrate from (old version). Only relevant for action "-a migrate"
+    -f    Version to migrate from (old version). Only relevant for action "-a migrate"
 
     -t    Version to migrate to (new version). Only relevant for action "-a migrate"
 
@@ -325,20 +323,20 @@ Syntax
           All server set in this parameter must be running otherwise not processed!
           
     -x    If set action (-a argument) is executed. By default only the silent response file is
-          going to be created. Note that checks to ensure a successful execution are still
-          performed. Hence check both response file and the message flow.
+          going to be created. Note that checks to ensure a successful execution are still performed.
+          Hence check both response file and the message flow.
 
     -d    If set, temporary files are deleted. By default those files are not deleted but 
-          overwritten during the next call
+          overwritten during the next call.
           
 -----------------------------------
 
 1.  Configure two server in production environment with ITCAM Managing
     Server and TEMA for WebSphere enabled\
-    \
+    
     itcam-cfg.sh -h /usr/WebSphere/AppServer -e prod -m yndiag -a config
     -v 7.3.0.0.02 -s Portal\_01,Portal\_02 **--x**\
-    *\
+    
     *If you want to override the Dmgr SOAP\_CONNECTOR\_ADDRESS Port
     discovered automatically please use -p argument:\
     \
