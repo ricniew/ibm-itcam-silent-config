@@ -292,7 +292,7 @@ Syntax
 > \[ -x \] \[ -d \]
 
 
-*-h*<pre>   home directory</pre>
+    -h    home directory
 
 *-p* &nbsp;&nbsp;&nbsp;SOAP port used to connect to Dmgr (**optional**). Only relevant in case of \"-a\=config\"\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By default this port is retrieved by a wsadmin Python script. However you can use this\
