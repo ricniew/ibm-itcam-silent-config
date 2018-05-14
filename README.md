@@ -12,7 +12,7 @@ Revision: 0.1
 
 [2 Installation](#2-installation)
 
-[2.1 Supported Operating System](#2.1-supported-operating-system)
+[2.1 Supported Operating System](#2-1-supported-operating-system)
 
 [2.2 Preparation](#preparation)
 
