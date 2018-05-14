@@ -337,14 +337,13 @@ Sample executions for configuration
 
 1.  Configure two server in production environment with ITCAM Managing
     Server and TEMA for WebSphere enabled\
+
+
+         itcam-cfg.sh -h /usr/WebSphere/AppServer -e prod -m yndiag -a config -v 7.3.0.0.02 -s Portal_01,Portal_02 -x
     
-    itcam-cfg.sh -h /usr/WebSphere/AppServer -e prod -m yndiag -a config
-    -v 7.3.0.0.02 -s Portal\_01,Portal\_02 **--x**\
+    *If you want to override the Dmgr SOAP\_CONNECTOR\_ADDRESS Port discovered automatically please use -p argument*:
     
-    *If you want to override the Dmgr SOAP\_CONNECTOR\_ADDRESS Port
-    discovered automatically please use -p argument:\
-    \
-    itcam-cfg.sh -h /usr/WebSphere/AppServer -p 1234 -e prod -m yndiag
+        itcam-cfg.sh -h /usr/WebSphere/AppServer -p 1234 -e prod -m yndiag
     -a config -v 7.2.0.0.13 -s Portal\_01,Portal\_02 **--x**
 
 2.  Create a configuration [silent response file only]{.underline}
