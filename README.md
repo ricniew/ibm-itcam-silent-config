@@ -432,68 +432,39 @@ If the names will be changed by IBM, you need to modify the procedure. If these 
 Sample configuration response file
 ----------------------------------
 
-ITCAM Agent for WebSphere only configuration:
+1. ITCAM Agent for WebSphere only configuration:
 
-\# ITCAM Data Collector silent response file
-
-\[DEFAULT SECTION\]
-
-\# Integration of the DC with the ITCAM for Transactions
-
-ttapi.enable=False
-
-\# Integration of the DC with the ITCAM for SOA
-
-soa.enable=False
-
-\# Integration of the DC with the Tivoli Performance Monitoring
-
-tpv.enable=False
-
-\# Integration of the DC with the ITCAM Diagnostics Tool
-
-de.enable=False
-
-\# Backup of the WebSphere configuration
-
-was.backup.configuration=False
-
-\# Integration with ITCAM Agent for WebSphere Applications:
-
-temaconnect=True
-
-tema.host=127.0.0.1
-
-tema.port=63335
-
-\# Connect to WebSphere Admin Services
-
-was.wsadmin.connection.host=dmgr.mycompany.com
-
-was.wsadmin.connection.type=SOAP
-
-was.wsadmin.connection.port=28880
-
-was.client.props=true
-
-\# WebSphere Application Server settings
-
-was.appserver.profile.name=WasNode01
-
-was.appserver.home=/usr/WebSphere855/AppServer
-
-was.appserver.cell.name=WasCell
-
-was.appserver.node.name=WasNode01
-
-\# WebSphere Application Server runtime instance settings
-
-\[SERVER\]
-
-was.appserver.server.name=Server\_01
-
-Sample unconfiguration response file
-------------------------------------
+       # ITCAM Data Collector silent response file 
+       [DEFAULT SECTION]
+       # Integration of the DC with the ITCAM for Transactions
+       ttapi.enable=False
+       # Integration of the DC with the ITCAM for SOA
+       soa.enable=False
+       # Integration of the DC with the Tivoli Performance Monitoring
+       tpv.enable=False
+       # Integration of the DC with the ITCAM Diagnostics Tool
+       de.enable=False
+       # Backup of the WebSphere configuration
+       was.backup.configuration=False
+       # Integration with ITCAM Agent for WebSphere Applications:
+       temaconnect=True
+       tema.host=127.0.0.1
+       tema.port=63335
+       # Connect to WebSphere Admin Services
+       was.wsadmin.connection.host=dmgr.mycompany.com
+       was.wsadmin.connection.type=SOAP
+       was.wsadmin.connection.port=28880
+       was.client.props=true
+       # WebSphere Application Server settings
+       was.appserver.profile.name=WasNode01
+       was.appserver.home=/usr/WebSphere855/AppServer
+       was.appserver.cell.name=WasCell
+       was.appserver.node.name=WasNode01
+       # WebSphere Application Server runtime instance settings
+       [SERVER]
+       was.appserver.server.name=Server_01
+       
+2. Sample unconfiguration response file
 
 \# ITCAM Data Collector silent response file
 
