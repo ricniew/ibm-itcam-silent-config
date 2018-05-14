@@ -95,8 +95,7 @@ and IBM Cloud Application Performance Management, Private 8.1.4*.
 2 Installation
 ==============
 
-Unzip the attached archive to a temporary directory on the host were
-your ITCAM agent/datacollector and WebSPhere server are running. It
+Unzip the attached archive to a temporary directory on the host were your ITCAM agent/datacollector and WebSPhere server are running. It
 contains following files:
 
 -   Shell procedure *itcam\_cfg.sh*\
@@ -104,16 +103,12 @@ contains following files:
 
 -   This README document
 
--   Python procedure *modify-jvm-argumenst.py\
-    *Optional: It can be used to modify or set JVM arguments. For
-    example\
-    -*verbosegc* is set by default during DC configuration. You can use
-    the procedure with *wsadmin.sh* and delete *-verbosegc* from the JVM
-    arguments. Please refer to chapter *2.2 Preparation Point "4.*
-    OPTIONAL: Customer specific post processing"
+-   Python procedure *modify-jvm-argumenst.py*\ 
+    Optional: It can be used to modify or set JVM arguments. For example *-verbosegc* is set by default during DC configuration.\
+    You can use the procedure with *wsadmin.sh* and delete *-verbosegc* from the JVM arguments. Please refer to chapter "Preparation", \
+    Point "'4. OPTIONAL: Customer specific post processing*"
 
-Apart of the *itcam-cfg.sh* following existing WebSphere and ITCAM shell
-scripts are used as well:
+Apart of the *itcam-cfg.sh* following existing WebSphere and ITCAM shell scripts are used as well:
 
 - ITCAMDCHOME/version/bin/\[config,unconfig,migrate\].sh\
 - WASHOME/bin/\[wsadmin,manageprofiles\].sh*
@@ -124,7 +119,7 @@ scripts are used as well:
 Procedure was tested on UNIX AIX and Linux Redhat but should run on all
 UNIX and Linux Operating systems. The required shell is *bash*. It is
 not running on Windows.\
-\
+
 The ITCAM for WebSphere agent and Data Collector (DC) must be installed.
 The tested version have been 7.2 and 7.3.
 
