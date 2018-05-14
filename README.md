@@ -7,7 +7,7 @@ Contact: niewolik@de.ibm.com
 #
 Revision: 0.1
 
-[0 Link text](#linktext)
+[0 Link text](#link-text)
 
 [1 General](#general)
 
