@@ -1,4 +1,3 @@
---number-sections
 # ibm-itcam-silent-config
 Create ITCAM data collector silent response file by minimizing user input 
 
@@ -118,7 +117,7 @@ Supported Operating System
 
 Procedure was tested on UNIX AIX and Linux Redhat but should run on all
 UNIX and Linux Operating systems. The required shell is *bash*. It is
-not running on Windows.\
+not running on Windows.
 
 The ITCAM for WebSphere agent and Data Collector (DC) must be installed.
 The tested version have been 7.2 and 7.3.
