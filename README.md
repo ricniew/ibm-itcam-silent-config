@@ -95,15 +95,15 @@ and IBM Cloud Application Performance Management, Private 8.1.4*.
 2 Installation
 ==============
 
-Unzip the attached archive to a temporary directory on the host were your ITCAM agent/datacollector and WebSPhere server are running. It
+Unzip the attached archive to a temporary directory on the host were your ITCAM Agent\+Datacollector and WebSPhere server are running. It
 contains following files:
 
--   Shell procedure *itcam\_cfg.sh*
+-   Shell procedure *itcam\_cfg.sh*\
     This is the main procedure to use.
 
 -   This README document
 
--   Python procedure *modify-jvm-argumenst.py*
+-   Python procedure *modify-jvm-argumenst.py*\
     Optional: It can be used to modify or set JVM arguments. For example *-verbosegc* is set by default during DC configuration.\
     You can use the procedure with *wsadmin.sh* and delete *-verbosegc* from the JVM arguments. Please refer to chapter "Preparation", \
     Point "'4. OPTIONAL: Customer specific post processing*"
@@ -420,7 +420,7 @@ If the names will be changed by IBM, you need to modify the procedure. If these 
 5 Appendixes
 ============
 
-Sample configuration response files
+Sample configuration response file
 ----------------------------------
 
 ITCAM Agent for WebSphere only configuration:
