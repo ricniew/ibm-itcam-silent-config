@@ -208,9 +208,9 @@ Always check the created response file if it meets your required set up.
     
     >  \#By default no post processing defined.\
     >  \#You can uncomment the line below and modify function PostProcessing\
-    >   \# PostProcessing\
-       To\
-    >    PostProcessing\
+    >   \# PostProcessing
+    To
+    >    PostProcessing
 
     Add required code to the function *PostProcessing*
   
@@ -219,8 +219,7 @@ Always check the created response file if it meets your required set up.
     > if \[ \"\${ACTION}\" == \"config\" \] ; then\
     > \#\-\-\-\-\-\-\-\-\-\-\-\-\-- CONFIG
     > \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--\
-    > echo \"INFO Customer specific post processing for \\\"-a config\\\"
-    > defined\"\
+    > echo \"INFO Customer specific post processing for \"-a config\" defined\"\
     > echo \"INFO Post processing: Delete "-verbosegc\" from the JVM arguments for servers configured previously\"\
     > echo \"\${WSADMIN\_HOME}/wsadmin.sh -lang jython -f jvm\_arguments.py del \${SERVERJVM\[\*\]}\" --verbosegc\
     > \${WSADMIN\_HOME}/wsadmin.sh -lang jython -f jvm\_arguments.py del "\${SERVERJVM\[\*\]}" --verbosegc\
