@@ -24,7 +24,7 @@ Revision: 0.1
 
 [3.2 Sample executions for Configuration](#sample-executions-for-configuration)
 
-[3.3 Samples executions for Unconfiguration](#samples-executions-for-unconfiguration)
+[3.3 Sample executions for Unconfiguration](#sample-executions-for-unconfiguration)
 
 [3.4 Sample executions for Migration](#sample-executions-for-migration)
 
@@ -332,7 +332,7 @@ Syntax
     -d    If set, temporary files are deleted. By default those files are not deleted but 
           overwritten during the next call.
           
-Samples executions for configuration
+Sample executions for configuration
 ------------------------------------
 
 1.  Configure two server in production environment with ITCAM Managing
@@ -360,8 +360,8 @@ Samples executions for configuration
     itcam-cfg.sh -h /usr/WebSphere/AppServer -a config -e stage -m diag
     -v 7.2.0.0.13 **--x**
 
-Samples executions for Unconfiguration
---------------------------------------
+Sample executions for Unconfiguration
+-------------------------------------
 
 1.  Create a [silent response file only]{.underline} without execution
     unconfiguration step for all servers\
