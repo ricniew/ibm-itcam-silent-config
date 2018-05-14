@@ -32,17 +32,13 @@ Revision: 0.1
 
 [5 Appendixes](#5-appendixes)
 
-[5.1 Sample configuration response files](#sample-configuration-response-files)
+[5.1 Sample configuration response file](#sample-configuration-response-file)
 
-[5.2 Sample unconfiguration response files](#sample-unconfiguration-response-files)
+[5.2 Sample unconfiguration response file](#sample-unconfiguration-response-file)
 
-[5.3 Sample migration response files](#sample-migration-response-files)
+[5.3 Sample migration response file](#sample-migration-response-file)
 
-[5.4 Sample execution flows](#sample-execution-flows)
-
-[5.4.1 Configuration (create response file only)](#configuration-create-response-file-only)
-
-[5.4.2 Configuration of a single server with post process](#configuration-of-a-single-server-with-post-process)
+[5.4 Sample execution flow](#sample-execution-flows)
 
 #
 
@@ -517,7 +513,7 @@ Sample execution flows
 
 Configuration (create response file only)
 
-    $ /itcam-cfg_V2.2.sh -h /usr/WebSphere855/AppServer -a config -m yn -v 7.2.0.0.14 
+    $ /itcam-cfg.sh -h /usr/WebSphere855/AppServer -a config -m yn -v 7.2.0.0.14 
     INFO Script Version 2.2
     INFO Check options
     INFO WASHOME=/usr/WebSphere855/AppServer
