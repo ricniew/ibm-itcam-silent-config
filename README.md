@@ -113,8 +113,8 @@ Apart of the *itcam-cfg.sh* following existing WebSphere and ITCAM shell scripts
 - ITCAMDCHOME/version/bin/\[config,unconfig,migrate\].sh\
 - WASHOME/bin/\[wsadmin,manageprofiles\].sh*
 
-2.1 Supported Operating System
-------------------------------
+Supported Operating System
+--------------------------
 
 Procedure was tested on UNIX AIX and Linux Redhat but should run on all
 UNIX and Linux Operating systems. The required shell is *bash*. It is
