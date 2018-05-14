@@ -339,73 +339,57 @@ Sample executions for configuration
     Server and TEMA for WebSphere enabled\
 
 
-         itcam-cfg.sh -h /usr/WebSphere/AppServer -e prod -m yndiag -a config -v 7.3.0.0.02 -s Portal_01,Portal_02 -x
+         itcam-cfg.sh -h /usr/WebSphere/AppServer -e prod -m yndiag -a config -v 7.3.0.0.02 -s server1,server2 -x
     
     *If you want to override the Dmgr SOAP\_CONNECTOR\_ADDRESS Port discovered automatically please use -p argument*:
     
-        itcam-cfg.sh -h /usr/WebSphere/AppServer -p 1234 -e prod -m yndiag
-    -a config -v 7.2.0.0.13 -s Portal\_01,Portal\_02 **--x**
+        itcam-cfg.sh -h /usr/WebSphere/AppServer -p 1234 -e prod -m yndiag -a config -v 7.2.0.0.13 -s server1,server2 -x
 
-2.  Create a configuration [silent response file only]{.underline}
-    without execution for all servers running with TEMA for WebSphere
+2.  Create a configuration [silent response file only] without execution for all servers running with TEMA for WebSphere
     enabled only\
-    \
-    itcam-cfg.sh -h /usr/WebSphere/AppServer -m yn -a config -v
-    7.2.0.0.13
+        
+        itcam-cfg.sh -h /usr/WebSphere/AppServer -m yn -a config -v 7.2.0.0.13
 
-3.  Configure all server in *Stage* env ITCAM Managing Server enabled
-    only\
-    \
-    itcam-cfg.sh -h /usr/WebSphere/AppServer -a config -e stage -m diag
-    -v 7.2.0.0.13 **--x**
+3.  Configure all server in *Stage* env ITCAM Managing Server enabled only\
+    
+        itcam-cfg.sh -h /usr/WebSphere/AppServer -a config -e stage -m diag -v 7.2.0.0.13 -x
 
 Sample executions for Unconfiguration
 -------------------------------------
 
 1.  Create a [silent response file only]{.underline} without execution
     unconfiguration step for all servers\
-    \
-    itcam-cfg.sh -h /usr/WebSphere/AppServer -a unconfig -v 7.2.0.0.13
+    
+        itcam-cfg.sh -h /usr/WebSphere/AppServer -a unconfig -v 7.2.0.0.13
 
 2.  Unconfigure a server and delete temporary files\
-    \
-    itcam-cfg.sh -h /usr/WebSphere/AppServer -a unconfig -v 7.3.0.0.02
-    -d -s server1,server2 **-x** --d
+    
+        itcam-cfg.sh -h /usr/WebSphere/AppServer -a unconfig -v 7.3.0.0.02 -s server1,server2 -x -d
 
 Sample executions for Migration
 -------------------------------
 
-1.  Migrate all server to a new version (note that version 7.2.0.0.14
-    should be installed before)\
-    \
-    itcam-cfg.sh -h /usr/WebSphere/AppServer -a migrate -f 7.2.0.0.13 -t
-    7.2.0.0.14 **--x\
-    **
+1.  Migrate all server to a new version (note that version 7.2.0.0.14 should be installed before)\
+    
+        itcam-cfg.sh -h /usr/WebSphere/AppServer -a migrate -f 7.2.0.0.13 -t 7.2.0.0.14 -x
 
 2.  Migrate server \"server1\" to a new version.\
-    \
-    itcam-cfg.sh -h /usr/WebSphere/AppServer -a migrate -f 7.2.0.0.13 -t
-    7.2.0.0.14 -s server1 **--x\
-    **
+    
+        itcam-cfg.sh -h /usr/WebSphere/AppServer -a migrate -f 7.2.0.0.13 -t 7.2.0.0.14 -s server1
 
-3.  Create a [silent response file only]{.underline} without execution
-    migration step for all servers\
-    \
-    itcam-cfg.sh -h /usr/WebSphere/AppServer -a migrate -f 7.2.0.0.13 -t
-    7.2.0.0.14
+3.  Create a [silent response file only]{.underline} without execution migration step for all servers\
+    
+        itcam-cfg.sh -h /usr/WebSphere/AppServer -a migrate -f 7.2.0.0.13 -t 7.2.0.0.14
 
 4 Troubleshooting
 =================
 
-Temporary files created are not deleted by default (prefixed by
-tmp..\[filename\]). You may use them for problem analysis in case of
-errors:
+Temporary files created are not deleted by default (prefixed by tmp..\[filename\]). You may use them for problem analysis in case of
+errors:\
 
-tmp.itcamdc.silentinput.txt (response file created)
-
-tmp.itcamdc.websphere\_data.conf (data retrieved using wsadmin.sh)
-
-tmp.itcamdc.wsadminScript.py (Python script used for wsadmin.sh)
+- tmp.itcamdc.silentinput.txt (response file created)
+- tmp.itcamdc.websphere\_data.conf (data retrieved using wsadmin.sh)
+- tmp.itcamdc.wsadminScript.py (Python script used for wsadmin.sh)
 
 **Please note: **
 
