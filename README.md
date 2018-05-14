@@ -94,12 +94,8 @@ and IBM Cloud Application Performance Management, Private 8.1.4*.
 
 [https://www.ibm.com/support/knowledgecenter/en/SSHLNR\_8.1.4/com.ibm.pm.doc/install/was\_unconfigure\_dcsilent.htm](https://www.ibm.com/support/knowledgecenter/en/SSHLNR_8.1.4/com.ibm.pm.doc/install/was_unconfigure_dcsilent.htm)
 
-Link text
-=========
-sadfdsaf
-
-Installation
-============
+2 Installation
+==============
 
 Unzip the attached archive to a temporary directory on the host were
 your ITCAM agent/datacollector and WebSPhere server are running. It
