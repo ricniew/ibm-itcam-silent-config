@@ -6,8 +6,13 @@ Author: Richard Niewolik
 Contact: niewolik@de.ibm.com
 #
 Revision: 0.1
+[0 Link text](#linktext)
 
-[1 General](#General)
+0 Link text
+===========
+
+
+[1 General](#general)
 
 [2 Installation](#installation)
 
