@@ -1,3 +1,4 @@
+--number-sections
 # ibm-itcam-silent-config
 Create ITCAM data collector silent response file by minimizing user input 
 
