@@ -121,8 +121,8 @@ scripts are used as well:
 - ITCAMDCHOME/version/bin/\[config,unconfig,migrate\].sh\
 - WASHOME/bin/\[wsadmin,manageprofiles\].sh*
 
-Supported Operating System
---------------------------
+2.1 Supported Operating System
+------------------------------
 
 Procedure was tested on UNIX AIX and Linux Redhat but should run on all
 UNIX and Linux Operating systems. The required shell is *bash*. It is
