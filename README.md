@@ -5,31 +5,20 @@ Create ITCAM data collector silent response file by minimizing user input
 Author: Richard Niewolik
 
 Contact: niewolik@de.ibm.com
-#
+
 Revision: 0.1
 
-
-
-
-{:.no_toc}
-
-- TOC
-{:toc}
-
-----
-
-
-
+#
 
 [1 General](#1-general)
 
 [2 Installation](#2-installation)
 
-[2.1 Supported Operating System](#2\.1-supported-operating-system)
+[2.1 Supported Operating System](#supported-operating-system)
 
 [2.2 Preparation](#preparation)
 
-[3 Usage](#usage)
+[3 Usage](#3-usage)
 
 [3.1 Syntax](#syntax)
 
@@ -39,9 +28,9 @@ Revision: 0.1
 
 [3.4 Sample executions for Migration](#sample-executions-for-migration)
 
-[4 Troubleshooting](#troubleshooting)
+[4 Troubleshooting](#4-troubleshooting)
 
-[5 Appendixes](#appendixes)
+[5 Appendixes](#5- appendixes)
 
 [5.1 Sample configuration response file](#sample-configuration-response-file)
 
@@ -292,8 +281,8 @@ Always check the created response file if it meets your required set up.
 
 
 
-Usage
-=====
+3 Usage
+=======
 
 Syntax
 ------
@@ -343,7 +332,8 @@ Syntax
     -d    If set, temporary files are deleted. By default those files are not deleted but 
           overwritten during the next call.
           
------------------------------------
+Samples executions for configuration
+------------------------------------
 
 1.  Configure two server in production environment with ITCAM Managing
     Server and TEMA for WebSphere enabled\
@@ -370,10 +360,8 @@ Syntax
     itcam-cfg.sh -h /usr/WebSphere/AppServer -a config -e stage -m diag
     -v 7.2.0.0.13 **--x**
 
-    5.  Samples executions for Unconfiguration
-        --------------------------------------
-
-<!-- -->
+Samples executions for Unconfiguration
+--------------------------------------
 
 1.  Create a [silent response file only]{.underline} without execution
     unconfiguration step for all servers\
@@ -385,10 +373,8 @@ Syntax
     itcam-cfg.sh -h /usr/WebSphere/AppServer -a unconfig -v 7.3.0.0.02
     -d -s server1,server2 **-x** --d
 
-    6.  Sample executions for Migration
-        -------------------------------
-
-<!-- -->
+Sample executions for Migration
+-------------------------------
 
 1.  Migrate all server to a new version (note that version 7.2.0.0.14
     should be installed before)\
@@ -409,8 +395,8 @@ Syntax
     itcam-cfg.sh -h /usr/WebSphere/AppServer -a migrate -f 7.2.0.0.13 -t
     7.2.0.0.14
 
-Troubleshooting
-===============
+4 Troubleshooting
+=================
 
 Temporary files created are not deleted by default (prefixed by
 tmp..\[filename\]). You may use them for problem analysis in case of
@@ -466,8 +452,8 @@ procedure and check messages and output:\
 WASHOME/bin/wsadmin.sh -lang jython -f tmp.itcamdc.wsadminScript.py\
 WASHOME/bin/manageprofiles.sh
 
-5.  Appendixes
-    ==========
+5 Appendixes
+============
 
     7.  Sample configuration response file
         ----------------------------------
