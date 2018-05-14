@@ -30,13 +30,13 @@ Revision: 0.1
 
 [4 Troubleshooting](#4-troubleshooting)
 
-[5 Appendixes](#5- appendixes)
+[5 Appendixes](#5-appendixes)
 
-[5.1 Sample configuration response file](#sample-configuration-response-file)
+[5.1 Sample configuration response files](#sample-configuration-response-files)
 
-[5.2 Sample unconfiguration response file](#sample-unconfiguration-response-file)
+[5.2 Sample unconfiguration response files](#sample-unconfiguration-response-files)
 
-[5.3 Sample migration response file](#sample-migration-response-file)
+[5.3 Sample migration response files](#sample-migration-response-files)
 
 [5.4 Sample execution flows](#sample-execution-flows)
 
@@ -429,10 +429,10 @@ If the names will be changed by IBM, you need to modify the procedure. If these 
 5 Appendixes
 ============
 
-Sample configuration response file
+Sample configuration response files
 ----------------------------------
 
-1. ITCAM Agent for WebSphere only configuration:
+ITCAM Agent for WebSphere only configuration:
 
        # ITCAM Data Collector silent response file 
        [DEFAULT SECTION]
@@ -464,597 +464,131 @@ Sample configuration response file
        [SERVER]
        was.appserver.server.name=Server_01
        
-2. Sample unconfiguration response file
+Sample unconfiguration response file
+------------------------------------
 
-\# ITCAM Data Collector silent response file
-
-\[DEFAULT SECTION\]
-
-\# Backup of the WebSphere configuration
-
-was.backup.configuration=False
-
-\#Connect to WebSphere Admin Services
-
-was.wsadmin.connection.host= dmgr.mycompany.com
-
-was.wsadmin.connection.type=SOAP
-
-was.client.props=true
-
-\# WebSphere Application Server details
-
-was.appserver.profile.name=WasNode01
-
-was.appserver.home=/usr/WebSphere855/AppServer
-
-was.appserver.cell.name=WasCell
-
-was.appserver.node.name=WasNode01
-
-\# WebSphere Application Server runtime instance settings
-
-\[SERVER\]
-
-was.appserver.server.name=Server\_01
-
-\[SERVER\]
-
-was.appserver.server.name=Server\_02
+    # ITCAM Data Collector silent response file
+    [DEFAULT SECTION]
+    # Backup of the WebSphere configuration
+    was.backup.configuration=False
+    # Connect to WebSphere Admin Services
+    was.wsadmin.connection.host= dmgr.mycompany.com
+    was.wsadmin.connection.type=SOAP
+    was.client.props=true
+    # WebSphere Application Server details
+    was.appserver.profile.name=WasNode01
+    was.appserver.home=/usr/WebSphere855/AppServer
+    was.appserver.cell.name=WasCell
+    was.appserver.node.name=WasNode01
+    # WebSphere Application Server runtime instance settings
+    [SERVER]
+    was.appserver.server.name=Server_01
+    [SERVER]
+    was.appserver.server.name=Server_02
 
 Sample migration response file
 ------------------------------
 
-\# ITCAM Data Collector silent response file
-
-\[DEFAULT SECTION\]
-
-migrate.type=AD
-
-Location of data collector to be migrated
-
-itcam.migrate.home=/apm/yn/dchome/7.3.0.0.2
-
-\#Connect to WebSphere Admin Services
-
-was.wsadmin.connection.host= dmgr.mycompany.com
-
-was.wsadmin.connection.type=SOAP
-
-was.client.props=true
-
-\# WebSphere Application Server details
-
-was.appserver.profile.name=WasNode01
-
-was.appserver.home=/usr/WebSphere855/AppServer
-
-was.appserver.cell.name=WasCell
-
-was.appserver.node.name=WasNode01
-
-\# WebSphere Application Server runtime instance settings
-
-\[SERVER\]
-
-was.appserver.server.name=Server\_01
-
-\[SERVER\]
-
-was.appserver.server.name=Server\_02
-
-\[SERVER\]
-
-was.appserver.server.name=Server\_03
-
-10. Sample execution flows
-    ----------------------
-
-    1.  ### Configuration (create response file only)
-
-**\$./itcam-cfg\_V2.2.sh -h /usr/WebSphere855/AppServer -a config -m yn
--v 7.2.0.0.14 **
-
-INFO Script Version 2.2
-
-INFO Check options
-
-INFO WASHOME=/usr/WebSphere855/AppServer
-
-INFO ACTION=config
-
-INFO SHORTVERSION=72
-
-INFO VERSION=7.2.0.0.14
-
-INFO MODE=yn
-
-INFO DELTMP=false \# Temporary files will NOT be deleted (DEFAULT)
-
-INFO SERVER=all
-
-INFO EXECACTION=false \# Only silent response will be created (DEFAULT)
-
-INFO ITMHOME=/itm
-
-INFO WSADMIN\_HOME=/usr/WebSphere855/AppServer/bin
-
-INFO WASDCHOME=/itm/aix533/yn/wasdc
-
-INFO DCHOME=/itm/aix533/yn/wasdc/7.2.0.0.14
-
-INFO Collecting required data from WebSphere using wsadmin
-
-INFO Executing /usr/WebSphere855/AppServer/bin/wsadmin.sh -lang jython
--f tmp.itcamdc.wsadminScript.py
-
-INFO Data successfully collected from WebSphere
-
-INFO CellMgrHostname=dmgr.host.com
-
-INFO Cellname=WasStageCell
-
-INFO Nodename=WasStageNode01
-
-INFO Running on host server.host.com
-
-INFO DMGR SOAP connector address returned by wsadmin is: 28880
-
-INFO Collecting profile information using manageprofiles.sh
-
-INFO Existing profiles: WasStageMyNode.
-
-INFO PROFILENAME=WasStageMyNode
-
-INFO JAVA\_HOME=/usr/WebSphere855/AppServer/java
-
-INFO Display Server\'s status:
-
-INFO BPM\_Server\_01 running
-
-INFO BPM\_Server\_02 running
-
-WARNING server1 not-running Server not running and will not be
-processed.
-
-WARNING Server BPM\_Server\_01 already configured with: 7.2.0.0.14.
-Server will not be processed
-
-INFO Server to process: BPM\_Server\_02
-
-INFO DMGRSoapPort used= 28880 (returned by tmp.itcamdc.wsadminScript.py)
-
-INFO DMGRSoapPort used= 28880
-
-INFO Display alias information
-
-INFO BPM\_Server\_02 no alias configured
-
-WARNING No alias found for some server in function
-\"CreateServerAliases\". Modify if required and restart the procedure.
-
-INFO Create silent response file for action=configuration
-
-INFO Created silent configuration file: tmp.itcamdc.silentinput.txt
-
-\-\-\--
-
-\# ITCAM Data Collector silent response file
-
-\[DEFAULT SECTION\]
-
-\# Integration of the DC with the ITCAM for Transactions
-
-ttapi.enable=False
-
-\# Integration of the DC with the ITCAM for SOA
-
-soa.enable=False
-
-\# Integration of the DC with the Tivoli Performance Monitoring
-
-tpv.enable=False
-
-\# Integration of the DC with the ITCAM Diagnostics Tool
-
-de.enable=False
-
-\# Backup of the WebSphere configuration
-
-was.backup.configuration=False
-
-\# Integration with ITCAM Agent for WebSphere Applications:
-
-temaconnect=True
-
-tema.host=127.0.0.1
-
-tema.port=63335
-
-\# Connect to WebSphere Admin Services
-
-was.wsadmin.connection.host=dmgr.host.com
-
-was.wsadmin.connection.type=SOAP
-
-was.wsadmin.connection.port=28880
-
-was.client.props=true
-
-\# WebSphere Application Server settings
-
-was.appserver.profile.name=WasStageMyNode
-
-was.appserver.home=/usr/WebSphere855/AppServer
-
-was.appserver.cell.name=WasStageMYCell
-
-was.appserver.node.name=WasStageMyNode
-
-\# WebSphere Application Server runtime instance settings
-
-\[SERVER\]
-
-was.appserver.server.name=BPM\_Server\_02
-
-\-\-\--
-
-WARNING Please check the response file created. Also check message flow
-for errors which may indicate potential issues preventing a successful
-action execution
-
-INFO procedure successfully ended
-
-**\$**
-
-### Configuration of a single server with post process
-
-**\$ ./itcam-cfg\_V2.2.sh -h /usr/WebSphere855/AppServer -p 28880 -a
-config -v 7.2.0.0.13 -s BPM\_Server\_serverhost\_01 -m yndiag -e stage
--x**
-
-INFO script version 2.2
-
-INFO Check options
-
-INFO WASHOME=/usr/WebSphere855/AppServer
-
-INFO DMGRSoapPort=28880
-
-INFO ACTION=config
-
-INFO SHORTVERSION=72
-
-INFO VERSION=7.2.0.0.13
-
-INFO MODE=yndiag
-
-INFO DELTMP=false \# Temporary files will NOT be deleted (DEFAULT)
-
-INFO SERVER=BPM\_Server\_serverhost\_01
-
-INFO EXECACTION=true \# Silent response will be created and ITCAM
-procedures started
-
-INFO ITMHOME=/itm
-
-INFO WSADMIN\_HOME=/usr/WebSphere855/AppServer/bin
-
-INFO WASDCHOME=/itm/aix533/yn/wasdc
-
-INFO DCHOME=/itm/aix533/yn/wasdc/7.2.0.0.13
-
-INFO Collecting required data from WebSphere using wsadmin
-
-INFO Executing /usr/WebSphere855/AppServer/bin/wsadmin.sh -lang jython
--f tmp.itcamdc.wsadminScript.py
-
-INFO Data successfully collected from WebSphere
-
-INFO CellMgrHostname=dmgr.host.com
-
-INFO Cellname=WasStageMyCell
-
-INFO Nodename=WasStageMyNode
-
-INFO Running on host server.host.com
-
-INFO Collecting profile information using manageprofiles.sh
-
-INFO Existing profiles: WasStageMyNode.
-
-INFO PROFILENAME=WasStageMyNode
-
-INFO JAVA\_HOME=/usr/WebSphere855/AppServer/java
-
-INFO Display Server\'s status:
-
-INFO BPM\_Server\_serverhost\_01 running
-
-INFO Server to process: BPM\_Server\_serverhost\_01
-
-INFO DMGRSoapPort used= 28880 (returned by tmp.itcamdc.wsadminScript.py)
-
-INFO DMGRSoapPort used= 28880
-
-INFO Display alias information
-
-INFO BPM\_Server\_serverhost\_01 BPM\_Server\_01
-
-INFO AMHOST=l6312w05.viessmann.com
-
-INFO AMHOME=/opt/IBM/itcam/WebSphere/MS
-
-INFO AMSOCKETBIND=ps017w05.viessmann.com
-
-INFO Create silent response file for action=configuration
-
-INFO Execute configuration based on arguments provided
-
-INFO Executing: /itm/aix533/yn/wasdc/7.2.0.0.13/bin/config.sh -silent
-tmp.itcamdc.silentinput.txt
-
-Environment Variables:
-
-ITCAM\_CONFIGHOME=/itm/aix533/yn/wasdc/7.2.0.0.13
-
-Command Line Flags:
-
--silent tmp.itcamdc.silentinput.txt
-
-\...
-
-Searching for servers under profile: WasStageMyNode
-
-Connecting to profile\...\.....
-
-Start finding servers for profile WasStageMyNode
-
-Processing WasStageNode01\...\....
-
-Finding servers done successfully for profile WasStageMyNode
-
-Finished finding servers for profile WasStageMyNode
-
-Successfully found servers for Profile: WasStageMyNode
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-\- \[Optional\] integration with ITCAM for SOA Agent -
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-\- \[Optional\] integration with ITCAM Agent for WebSphere Applications
--
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--+
-
-\| \[Optional\] For full monitoring capabilities and for integration
-with \|
-
-\| other monitoring components, configure the data collector within the
-\|
-
-\| application server. This configuration requires an application \|
-
-\| server restart. \|
-
-+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--+
-
-+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--+
-
-\| ITCAM Agent for WebSphere requires a TCP/IP port for resource \|
-
-\| monitoring. This port is used for internal communications between \|
-
-\| ITCAM components running on the same system. The default port is \|
-
-\| 63355. Unless this port is in use you should probably accept the \|
-
-\| default value. \|
-
-+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--+
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-\- \[Optional\] integration with ITCAM Managing Server -
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-MS home directory is: /opt/IBM/itcam/WebSphere/MS
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-\- \[Optional\] integration with ITCAM for Transactions -
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-\- \[Optional\] integration with Tivoli Performance Viewer -
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-\- \[Optional\] integration with -
-
-\- Application Performance Diagnostics Lite -
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-\- Advanced Settings -
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--+
-
-\| \|
-
-\| Data collector configuration summary \|
-
-\| \|
-
-+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--+
-
-Each of the servers will be configured for data collection
-
-These servers will be registered for resource (PMI) monitoring by ITCAM
-Agent for WebSphere Applications
-
-1\) List of servers selected
-
-\- WAS server:
-WasStagemyCell.WasStagemyNode.BPM\_Server\_serverhost\_01(WasStageMyNode)
-
-WAS node: WasStageMyNode
-
-WAS cell: WasStageMyCell
-
-WebSphere Profile home :
-
-/usr/WebSphere855/AppServer/profiles/WasStageMyNode
-
-wsadmin location :
-
-/usr/WebSphere855/AppServer/bin/wsadmin.sh
-
-WAS version : 8.5.5.13
-
-Deployment : Network deployment
-
-JVM mode : 64
-
-Server alias : BPM\_Server\_01
-
-Configuration home : /itm/aix533/yn/wasdc/7.2.0.0.13
-
-2\) Integrate with ITCAM for SOA Agent : No
-
-3\) Integrate with ITCAM Agent for WebSphere Applications : Yes
-
-Internal PMI Monitoring Port : 63355
-
-Config app server for TEMA : Yes
-
-Application Performance Diag : No
-
-TEMA hostname or IP address : 127.0.0.1
-
-TEMA port number : 63335
-
-4\) Integrate with ITCAM Managing Server : Yes
-
-MS hostname or IP address : itcam.msserver.com
-
-MS codebase port number : 9122
-
-MS home directory : /opt/IBM/itcam/WebSphere/MS
-
-5\) Integrate with ITCAM for Transactions : No
-
-6\) Integrate with Tivoli Performance Viewer : No
-
-7\) Integrate with Application Performance Diagnostics Lite : No
-
-8\) Advanced settings :
-
-Set Garbage Collection log path : No
-
-Processing Configuration call for Cell: WasStageCell Node:
-WasStageNode01 Profile: WasStageNode01
-
-Connecting to profile\...\.....
-
-Start Configuring BPM\_Server\_serverhost\_01
-
-Processing BPM\_Server\_serverhost\_01\...\....
-
-Configuration done successfully for BPM\_Server\_serverhost\_01
-
-Application server (BPM\_Server\_serverhost\_01) should be restarted
-
-Finished Configuring BPM\_Server\_serverhost\_01 successfully
-
-Summary:
-
-BPM\_Server\_serverhost\_01 (OK)
-
-Successfully executed Configuration for Cell: WasStageMyCell Node:
-WasStageMyNode Profile: WasStageMyNode
-
-Successful registration of resource (PMI) monitoring by ITCAM Agent for
-WebSphere Applications.
-
-INFO Customer specific post processing in case of \"-a config\" defined
-
-INFO Post processing: \"-verbosegc\" will be deleted from the JVM
-arguments
-
-/usr/WebSphere855/AppServer/bin/wsadmin.sh -lang jython -f
-jvm\_arguments.py del BPM\_Server\_serverhost\_01 -verbosegc
-
-WASX7209I: Connected to process \"dmgr\" on node WasStageMyManager using
-SOAP connector; The type of process is: DeploymentMyManager
-
-WASX7303I: The following options are passed to the scripting environment
-and are available as arguments that are stored in the argv variable:
-\"\[del, BPM\_Server\_serverhost\_01, -v
-
-\-\-\-\-\-- Procedure started \-\-\-\-\--
-
-\-\-\-\-\-- Parameter OK
-
-\-\--\> Argument to delete is: \" -verbosegc \"
-
-\-\-\-\-\-- JVM Server ID is
-(cells/WasStageMyCell/nodes/WasStageMyNode/servers/BPM\_Server\_serverhost\_01
-\|server.xml\#JavaVirtualMachine\_1418113880649) \-\-\-\-\-\--
-
-\-\-- Current Generic JVM Arguments are :
-
--Xtrace -Xgcpolicy:gencon -Xdisableexplicitgc -Xmn2048m
--agentlib:am\_ibm\_16=\${WAS\_SERVER\_NAME}
--Xbootclasspath/p:\${ITCAMDCHOME}/toolkit/lib/bcm-bootstrap.jar
--DjaHOME}/itcamdc/etc/datacollector.policy -verbosegc
--Dcom.ibm.tivoli.itcam.ai.runtimebuilder.inputs=\${ITCAMDCHOME}/runtime/WasStageMyNode.WasStageMyCell.WasStageMyNode
--Dsun.rmi.dgc.client.gcInterval=3600000
--Dsun.rmi.dgc.server.gcInterval=3600000
--Dsun.rmi.transport.connectionTimeout=300000
--Dws.bundle.metadata=\${ITCAMDCHOME}am.wascell=WasStageMyCell
--Dam.wasprofile=WasStageMyNode -Dam.wasnode=WasStageMyNode
--Dam.wasserver= BPM\_Server\_serverhost\_01
-
-\-\-- \"-verbosegc\" ist set, removing it\...
-
-\-\-- New Generic JVM Arguments are :
-
--Xtrace -Xgcpolicy:gencon -Xdisableexplicitgc -Xmn2048m
--agentlib:am\_ibm\_16=\${WAS\_SERVER\_NAME}
--Xbootclasspath/p:\${ITCAMDCHOME}/toolkit/lib/bcm-bootstrap.jar
--DjaHOME}/itcamdc/etc/datacollector.policy
--Dcom.ibm.tivoli.itcam.ai.runtimebuilder.inputs=\${ITCAMDCHOME}/runtime/WasStageMyNode.WasStageMyCell.WasStageMyNode
--Dsun.rmi.dgc.client.gcInterval=3600000
--Dsun.rmi.dgc.server.gcInterval=3600000
--Dsun.rmi.transport.connectionTimeout=300000
--Dws.bundle.metadata=\${ITCAMDCHOME}am.wascell=WasStageMyCell
--Dam.wasprofile=WasStageMyNode -Dam.wasnode=WasStageMyNode
--Dam.wasserver= BPM\_Server\_serverhost\_01
-
-\-\-- Modifying configuration: \"genericJvmArguments\" \...
-
-\-\-- Saving configuration \...
-
-=====================================================================
-
-\-\-\-\-\-- Procedure ended \-\-\-\-\--
-
-INFO procedure successfully ended
-
-**\$**
+    # ITCAM Data Collector silent response file
+    [DEFAULT SECTION]
+    migrate.type=AD
+    # Location of data collector to be migrated
+    itcam.migrate.home=/apm/yn/dchome/7.3.0.0.2
+    # Connect to WebSphere Admin Services
+    was.wsadmin.connection.host= dmgr.mycompany.com
+    was.wsadmin.connection.type=SOAP
+    was.client.props=true
+    # WebSphere Application Server details
+    was.appserver.profile.name=WasNode01
+    was.appserver.home=/usr/WebSphere855/AppServer
+    was.appserver.cell.name=WasCell
+    was.appserver.node.name=WasNode01
+    # WebSphere Application Server runtime instance settings
+    [SERVER]
+    was.appserver.server.name=Server_01
+    [SERVER]
+    was.appserver.server.name=Server_02
+    [SERVER]
+    was.appserver.server.name=Server_03
+
+
+Sample execution flows
+----------------------
+
+Configuration (create response file only)
+
+    $ /itcam-cfg_V2.2.sh -h /usr/WebSphere855/AppServer -a config -m yn -v 7.2.0.0.14 
+    INFO Script Version 2.2
+    INFO Check options
+    INFO WASHOME=/usr/WebSphere855/AppServer
+    INFO ACTION=config
+    INFO SHORTVERSION=72
+    INFO VERSION=7.2.0.0.14
+    INFO MODE=yn
+    INFO DELTMP=false \# Temporary files will NOT be deleted (DEFAULT)
+    INFO SERVER=all
+    INFO EXECACTION=false \# Only silent response will be created (DEFAULT)
+    INFO ITMHOME=/itm
+    INFO WSADMIN_HOME=/usr/WebSphere855/AppServer/bin
+    INFO WASDCHOME=/itm/aix533/yn/wasdc
+    INFO DCHOME=/itm/aix533/yn/wasdc/7.2.0.0.14
+    INFO Collecting required data from WebSphere using wsadmin
+    INFO Executing /usr/WebSphere855/AppServer/bin/wsadmin.sh -lang jython -f tmp.itcamdc.wsadminScript.py
+    INFO Data successfully collected from WebSphere
+    INFO CellMgrHostname=dmgr.host.com
+    INFO Cellname=WasStageCell
+    INFO Nodename=WasStageNode01
+    INFO Running on host server.host.com
+    INFO DMGR SOAP connector address returned by wsadmin is: 28880
+    INFO Collecting profile information using manageprofiles.sh
+    INFO Existing profiles: WasStageMyNode.
+    INFO PROFILENAME=WasStageMyNode
+    INFO JAVA_HOME=/usr/WebSphere855/AppServer/java
+    INFO Display Server's status:
+    INFO BPM_Server_01 running
+    INFO BPM_Server_02 running
+    WARNING server1 not-running Server not running and will not be processed.
+    WARNING Server BPM_Server_01 already configured with: 7.2.0.0.14. Server will not be processed
+    INFO Server to process: BPM_Server_02
+    INFO DMGRSoapPort used= 28880 (returned by tmp.itcamdc.wsadminScript.py)
+    INFO DMGRSoapPort used= 28880
+    INFO Display alias information
+    INFO BPM\_Server\_02 no alias configured
+    WARNING No alias found for some server in function "CreateServerAliases". Modify if required and restart the procedure.
+    INFO Create silent response file for action=configuration
+    INFO Created silent configuration file: tmp.itcamdc.silentinput.txt
+    ----
+    # ITCAM Data Collector silent response file
+    [DEFAULT SECTION\]
+    # Integration of the DC with the ITCAM for Transactions
+    ttapi.enable=False
+    # Integration of the DC with the ITCAM for SOA
+    soa.enable=False
+    # Integration of the DC with the Tivoli Performance Monitoring
+    tpv.enable=False
+    # Integration of the DC with the ITCAM Diagnostics Tool
+    de.enable=False
+    # Backup of the WebSphere configuration
+    was.backup.configuration=False
+    # Integration with ITCAM Agent for WebSphere Applications:
+    temaconnect=True
+    tema.host=127.0.0.1
+    tema.port=63335
+    # Connect to WebSphere Admin Services
+    was.wsadmin.connection.host=dmgr.host.com
+    was.wsadmin.connection.type=SOAP
+    was.wsadmin.connection.port=28880
+    was.client.props=true
+    # WebSphere Application Server settings
+    was.appserver.profile.name=WasStageMyNode
+    was.appserver.home=/usr/WebSphere855/AppServer
+    was.appserver.cell.name=WasStageMYCell
+    was.appserver.node.name=WasStageMyNode
+    # WebSphere Application Server runtime instance settings
+    [SERVER]
+    was.appserver.server.name=BPM_Server_02
+    ----
+    WARNING Please check the response file created. Also check message flow for errors which may indicate potential issues 
+            preventing a successful action execution
+    INFO procedure successfully ended
+    $ 
