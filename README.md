@@ -209,12 +209,11 @@ Always check the created response file if it meets your required set up.
     >  \#By default no post processing defined.\
     >  \#You can uncomment the line below and modify function PostProcessing\
     >   \# PostProcessing
+
     To
     >    PostProcessing
 
-    Add required code to the function *PostProcessing*
-  
-    A sample code could be:
+    Add required code to the function *PostProcessing*. A sample code could be:
     > 
     > if \[ \"\${ACTION}\" == \"config\" \] ; then\
     > \#\-\-\-\-\-\-\-\-\-\-\-\-\-- CONFIG
