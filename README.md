@@ -7,7 +7,7 @@ Contact: niewolik@de.ibm.com
 #
 Revision: 0.1
 
-[1 General](#general)
+[1 General](#General)
 
 [2 Installation](#installation)
 
