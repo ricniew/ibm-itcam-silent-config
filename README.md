@@ -9,7 +9,7 @@ Revision: 0.1
 
 [0 Link text](#link-text)
 
-[1 General](#general)
+[1 General](#1-general)
 
 [2 Installation](#installation)
 
@@ -45,8 +45,8 @@ Revision: 0.1
 
 #
 
-General
-=======
+1 General
+=========
 
 ITCAM Data Collector for WebSphere can be configured interactively with
 the ITCAM Data Collector for WebSphere Configuration utility but if you
