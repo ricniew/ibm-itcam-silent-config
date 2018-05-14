@@ -7,13 +7,12 @@ Contact: niewolik@de.ibm.com
 #
 Revision: 0.1
 
-[0 Link text](#link-text)
 
 [1 General](#1-general)
 
-[2 Installation](#installation)
+[2 Installation](#2-installation)
 
-[2.1 Supported Operating System](#supported-operating-system)
+[2.1 Supported Operating System](#2.1-supported-operating-system)
 
 [2.2 Preparation](#preparation)
 
