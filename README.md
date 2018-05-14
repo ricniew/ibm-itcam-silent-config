@@ -291,7 +291,8 @@ Syntax
 > \[-s servern1,servern2,\...}\
 > \[ -x \] \[ -d \]
 
-*-h* &nbsp;&nbsp;&nbsp;WebSphere home directory
+
+*-h*<pre>   home directory</pre>
 
 *-p* &nbsp;&nbsp;&nbsp;SOAP port used to connect to Dmgr (**optional**). Only relevant in case of \"-a\=config\"\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By default this port is retrieved by a wsadmin Python script. However you can use this\
@@ -310,6 +311,7 @@ Syntax
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diag= Data collector (DC) is configured to send data to the ITCAM Managing\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;server (MS) ONLY. Function *CreateAmVariables* must contain the correct\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values for your environment (MS server host)
+
 
 *-e*    Deployment environment \[prod, stage\]. Only relevant for action=config. Used to verify which\
             ITCAM Managaing Server host needs to be used in case of a \"-m \[diag, yndiag\]\" configuration\
@@ -335,11 +337,12 @@ going to be created. Note that checks to ensure a successful execution
 are still\
 performed. Hence check both response file and the message flow
 
-*-d* &nbsp;&nbsp;&nbsp;If set, temporary files are deleted. By default those files are not
-deleted but\
-overwritten during the next call
-
-Sample executions for Configuration
+*-d* &nbsp;&nbsp;&nbsp;If set, temporary files are deleted. By default those files are not deleted but\ 
+    overwritten during the next call </p>
+<pre>
+This        That        And             This
+That        This        And             That    
+</pre>
 -----------------------------------
 
 1.  Configure two server in production environment with ITCAM Managing
