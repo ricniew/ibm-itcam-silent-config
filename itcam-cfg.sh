@@ -69,7 +69,7 @@
 #
 ###################################################################
 #
-echo " INFO Script Version 2.2"
+echo " INFO Script Version 2.3"
 #
 PROGNAME=$(basename $0)
 USRCMD="$0 $*"
