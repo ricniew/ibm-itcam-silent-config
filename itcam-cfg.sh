@@ -806,11 +806,11 @@ GetWasdcHome()
      if [ -d "${WASDCHOME}" ]; then
          echo " INFO WASDCHOME=${WASDCHOME}"
      else
-         WASDCHOME=`find ${ITMHOME} -name wasdc`
+         WASDCHOME=`find ${ITMHOME} -name dchome`
          if [ -d "${WASDCHOME}" ]; then
              echo " INFO WASDCHOME=${WASDCHOME}"
          else
-             WASDCHOME=`find ${ITMHOME} -name dchome`
+             WASDCHOME=`find ${ITMHOME} -name wasdc`
              if [ -d "${WASDCHOME}" ]; then
                  echo " INFO WASDCHOME=${WASDCHOME}"
              else
