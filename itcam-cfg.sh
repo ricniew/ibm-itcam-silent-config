@@ -956,8 +956,8 @@ PostProcessing ()
 {
     #  Customer specific post processing can be inserted here
     if [ "${ACTION}" == "config" -o "${ACTION}" == "migrate" ] ; then
-    #-------------- CONFIG ----------------------------
-        echo " INFO VIE Customer specific post processing for \"-a config\" defined"
+    #-------------- CONFIG --SAMPLE --------------------------
+        echo " INFO Customer specific post processing for \"-a config\" defined"
         echo " INFO Post processing: \"-verbosegc\" will be deleted from the JVM arguments for all servers configured or migrated previously"
         i=0
         # write server names into a comma seperated string
@@ -1255,7 +1255,7 @@ if [ "${EXECACTION}" == "true" ] ; then
 
     # By default no post processing defined.
     # You can uncomment the line below and modify function PostProcessing
-    PostProcessing
+    #PostProcessing
     if [ $? -ne 0 ] ; then
         echo " ERROR During Post proccessing"
         exit 19
