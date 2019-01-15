@@ -632,7 +632,9 @@ for node_id in nodes:
     #endif
     dcbindip=nodehost
     nodehost=GetShorthostname(nodehost)
-    if nodehost == system_name:
+    # normaly node host name should be equal to the system host name but in some installations
+    # it is not configured and "localhost" is set, hence adding "or" below
+    if nodehost == system_name or nodehost == "localhost":
         if not dmgrmatch:
             nodefound = 1
             print "Running on: " + dcbindip
